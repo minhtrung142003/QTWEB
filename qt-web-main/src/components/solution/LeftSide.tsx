@@ -9,27 +9,33 @@ import unreal from "@assets/solution/unreal.png";
 import unity1 from "@assets/solution/unity1.png";
 import unity2 from "@assets/solution/unity2.png";
 import bgcomponent from "@assets/solution/bg_component.png";
+import webd from "@assets/solution/webd.png";
 const LeftSide: React.FC = () => {
   return (
-    <div className="w-full h-[843px] relative overflow-hidden flex flex-col items-end justify-start pt-[23px] px-[18px] pb-[13px] box-border gap-[178px] bg-[url('/public/solution@3x.png')] bg-cover bg-no-repeat bg-[top] leading-[normal] tracking-[normal] mq450:h-auto mq450:gap-[44px] mq750:gap-[89px]">
-      <section className="self-stretch h-[807px] relative shrink-0 max-w-full text-left text-base text-stroke-gradient font-inter mq450:h-auto mq450:min-h-[807]">
-        <div className="absolute top-[100px] left-[0px] [backdrop-filter:blur(6px)] rounded-2xl [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_0.35),_rgba(228,_228,_228,_0.7))] box-border w-full flex flex-row items-end justify-start pt-[27px] px-[37px] pb-[31px] gap-[267px] max-w-full text-center text-icon-color-unhover border-[2px] border-solid border-stroke-gradient lg:flex-wrap lg:gap-[133px] mq450:gap-[33px] mq750:gap-[67px]">
-          <div className="h-[707px] w-[1404px] relative [backdrop-filter:blur(6px)] rounded-2xl [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_0.35),_rgba(228,_228,_228,_0.7))] box-border hidden max-w-full border-[2px] border-solid border-stroke-gradient"></div>
+    <div className="w-full h-[843px] relative overflow-hidden flex flex-col items-end justify-start pt-[23px] pl-[36px]  ">
+      <div className="self-stretch h-[807px] relative shrink-0 w-full text-left text-base text-stroke-gradient font-inter mq450:h-auto mq450:min-h-[807]">
+        <div className="absolute top-[100px] left-[0px] [backdrop-filter:blur(6px)] rounded-2xl [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_0.35),_rgba(228,_228,_228,_0.7))] box-border w-full flex flex-row items-end justify-start pt-[27px] px-[37px] pb-[61px] gap-[267px] text-center text-icon-color-unhover border-[2px] ">
+          <div className="h-[707px] w-[1404px] relative [backdrop-filter:blur(6px)] rounded-2xl ,_rgba(228,_228,_228,_0.7))] box-border hidden max-w-full border-[2px] border-solid border-stroke-gradient"></div>
           <div className="w-[753px] flex flex-col items-start justify-end pt-0 px-0 pb-4 box-border max-w-full">
             <div className="self-stretch flex flex-col items-end justify-start gap-[14px] max-w-full">
               <div className="self-stretch flex flex-row items-start justify-start gap-[12.5px] max-w-full mq750:flex-wrap">
                 <div className="flex-1 flex flex-col items-start justify-start gap-[28px] min-w-[322px] max-w-full text-left text-13xl text-gainsboro">
                   <div className="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
-                    <div className="flex flex-row items-start justify-start gap-[10px] max-w-full mq450:flex-wrap">
-                      <h1 className="m-0 relative text-inherit font-bold font-inherit inline-block [text-shadow:1px_1px_3px_rgba(0,_0,_0,_0.55)]  z-[1] mq450:text-lgi mq1050:text-7xl text-[#DBDBDB] text-[32px]">
+                    {/* tiêu đề 1 */}
+                    <div className="flex flex-row items-start justify-start gap-[10px] max-w-full mq450:flex-wrap ">
+                      <h1 className="m-0 relative text-inherit font-bold font-inherit inline-block [text-shadow:1px_1px_3px_rgba(0,_0,_0,_0.55)]  z-[1] mq450:text-lgi mq1050:text-7xl text-white opacity-60 text-[32px]">
                         Support
                       </h1>
-                      <h1 className="m-0 relative text-inherit font-bold font-inherit text-brown-dark z-[1] mq450:text-lgi mq1050:text-7xl text-[32px] text-[#945C3C]">
-                        All Platforms
+                      <h1 className="m-0 relative text-inherit font-bold font-inherit text-brown-dark z-[1] mq450:text-lgi mq1050:text-7xl text-[32px] text-[#945c3c]">
+                        All Platform
                       </h1>
                     </div>
+                    {/* end tiêu đề 1 */}
+                    {/* ---------------------------------------------------------------------------------------------------- */}
+                    {/* content 1 */}
                     <div className="self-stretch flex flex-row items-start justify-start gap-[12px] text-center text-base text-icon-color-unhover mq750:flex-wrap">
-                      <div className="flex-1 flex flex-row items-start justify-start min-w-[106px] max-w-[115px] z-[1]">
+                      {/* item 1 */}
+                      <div className="flex-1 flex flex-row items-start justify-start min-w-[106px] max-w-[115px] z-[1] hover:border-colorOrgane hover:text-colorOrgane">
                         <div className="h-[175px] flex-1 relative">
                           <img
                             className="absolute top-[0px] left-[0px] rounded-3xs w-full h-full"
@@ -49,10 +55,11 @@ const LeftSide: React.FC = () => {
                           />
                         </div>
                       </div>
-                      <div className="flex-1 flex flex-col items-start justify-start pt-[23px] px-0 pb-0 box-border min-w-[106px] max-w-[115px]">
+                      {/* item 2 */}
+                      <div className="flex-1 flex flex-col items-start justify-start pt-[23px] px-0 pb-0 box-border min-w-[106px] max-w-[115px] hover:border-colorOrgane hover:text-colorOrgane">
                         <div className="self-stretch h-[175px] relative">
                           <div className="absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start h-full z-[1]">
-                            <div className="h-[175px] flex-1 relative">
+                            <div className="h-[175px] flex-1 relative ">
                               <img
                                 className="absolute top-[0px] left-[0px] rounded-3xs w-full h-full"
                                 alt=""
@@ -64,7 +71,6 @@ const LeftSide: React.FC = () => {
                                 <p className="m-0">IOS</p>
                               </div>
                             </div>
-                           
                           </div>
                           <img
                             className="absolute top-[25px] left-[28px] w-[60px] h-[60px] overflow-hidden z-[2]"
@@ -74,7 +80,8 @@ const LeftSide: React.FC = () => {
                           />
                         </div>
                       </div>
-                      <div className="h-[175px] flex-1 relative min-w-[106px] max-w-[115px]">
+                      {/* item 3 */}
+                      <div className="h-[175px] flex-1 relative min-w-[106px] max-w-[115px] hover:border-colorOrgane hover:text-colorOrgane">
                         <div className="absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start h-full z-[1]">
                           <div className="h-[175px] flex-1 relative">
                             <img
@@ -88,11 +95,6 @@ const LeftSide: React.FC = () => {
                               <p className="m-0">Application</p>
                             </div>
                           </div>
-                          <img
-                            className="h-[60px] w-[60px] relative overflow-hidden shrink-0 hidden"
-                            alt=""
-                            src="/public/windows-1.svg"
-                          />
                         </div>
                         <img
                           className="absolute top-[17px] left-[21px] w-[75px] h-[75px] overflow-hidden z-[2]"
@@ -101,7 +103,8 @@ const LeftSide: React.FC = () => {
                           src={virutal}
                         />
                       </div>
-                      <div className="flex-1 flex flex-col items-start justify-start pt-[23px] px-0 pb-0 box-border min-w-[106px] max-w-[115px]">
+                      {/* item 4 */}
+                      <div className="flex-1 flex flex-col items-start justify-start pt-[23px] px-0 pb-0 box-border min-w-[106px] max-w-[115px] hover:border-colorOrgane hover:text-colorOrgane">
                         <div className="self-stretch h-[175px] relative">
                           <div className="absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start h-full z-[1]">
                             <div className="h-[175px] flex-1 relative">
@@ -116,11 +119,6 @@ const LeftSide: React.FC = () => {
                                 <p className="m-0">Reality</p>
                               </div>
                             </div>
-                            <img
-                              className="h-[60px] w-[60px] relative overflow-hidden shrink-0 hidden"
-                              alt=""
-                              src="/public/windows-1.svg"
-                            />
                           </div>
                           <img
                             className="absolute top-[24px] left-[38px] w-[60px] h-[60px] overflow-hidden z-[2]"
@@ -130,8 +128,8 @@ const LeftSide: React.FC = () => {
                           />
                         </div>
                       </div>
-
-                      <div className="h-[175px] flex-1 relative min-w-[106px] max-w-[115px]">
+                      {/* item 5 */}
+                      <div className="h-[175px] flex-1 relative min-w-[106px] max-w-[115px] hover:border-colorOrgane hover:text-colorOrgane">
                         <div className="absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start h-full z-[1]">
                           <div className="h-[175px] flex-1 relative">
                             <img
@@ -144,11 +142,6 @@ const LeftSide: React.FC = () => {
                               <p className="m-0">Website</p>
                             </div>
                           </div>
-                          <img
-                            className="h-[60px] w-[60px] relative overflow-hidden shrink-0 hidden"
-                            alt=""
-                            src="/public/windows-1.svg"
-                          />
                         </div>
                         <img
                           className="absolute top-[19px] left-[23px] w-[70px] h-[70px] overflow-hidden z-[2]"
@@ -157,7 +150,8 @@ const LeftSide: React.FC = () => {
                           src={laptop}
                         />
                       </div>
-                      <div className="flex-1 flex flex-col items-start justify-start pt-[23px] px-0 pb-0 box-border min-w-[106px] max-w-[115px]">
+                      {/* item 6 */}
+                      <div className="flex-1 flex flex-col items-start justify-start pt-[23px] px-0 pb-0 box-border min-w-[106px] max-w-[115px] hover:border-colorOrgane hover:text-colorOrgane">
                         <div className="self-stretch h-[175px] relative">
                           <div className="absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start h-full z-[1]">
                             <div className="h-[175px] flex-1 relative">
@@ -181,20 +175,22 @@ const LeftSide: React.FC = () => {
                         </div>
                       </div>
                     </div>
+                    {/* end content 1 */}
                   </div>
+
+                  {/* tiêu đề 2 */}
                   <div className="flex flex-row items-start justify-start gap-[7px] max-w-full mq750:flex-wrap">
-                    <h1 className="m-0 relative text-inherit font-bold font-inherit [text-shadow:1px_1px_3px_rgba(0,_0,_0,_0.55)] z-[1] mq450:text-lgi mq1050:text-7xl text-[32px] text-[#DBDBDB]">
+                    <h1 className="m-0 relative text-inherit font-bold font-inherit [text-shadow:1px_1px_3px_rgba(0,_0,_0,_0.55)] z-[1] mq450:text-lgi mq1050:text-7xl text-[32px] text-white opacity-70">
                       With the lastest
                     </h1>
-                    <h1 className="m-0 relative text-inherit font-bold font-inherit text-brown-dark z-[1] mq450:text-lgi mq1050:text-7xl text-[32px] ">
+                    <h1 className="m-0 relative text-inherit font-bold font-inherit text-brown-dark z-[1] mq450:text-lgi mq1050:text-7xl text-[32px] text-[#945c3c]">
                       Technology
                     </h1>
                   </div>
                 </div>
-            
               </div>
+              {/* content 2 */}
               <div className="self-stretch grid flex-row items-start justify-start py-2.5 px-0 gap-[28.5px] grid-cols-[repeat(3,_minmax(174px,_1fr))] z-[1] text-right mq450:grid-cols-[minmax(174px,_1fr)] mq750:justify-center mq750:grid-cols-[repeat(2,_minmax(174px,_302px))] ">
-                {/* div 1 */}
                 <div className="h-[261px] flex flex-row items-start justify-start relative">
                   <div className="clip-custom rounded-2xl absolute w-full h-full">
                     <img
@@ -264,7 +260,7 @@ const LeftSide: React.FC = () => {
                       className="w-[134px] flex-1 relative max-h-full object-contain z-[2]"
                       loading="lazy"
                       alt=""
-                      src={unreal}
+                      src={webd}
                     />
                     <div className="flex flex-row items-start justify-start py-0 pr-0 pl-[19px] z-[2]">
                       <div className="rounded-17xl bg-button-unhover-white flex flex-row items-start justify-start py-1 px-[15px] whitespace-nowrap bg-gray-300 rounded-xl w-[159px] h-[31px] ">
@@ -276,22 +272,11 @@ const LeftSide: React.FC = () => {
                   </div>
                 </div>
               </div>
+              {/* end content 2 */}
             </div>
           </div>
-          <div className="flex flex-row items-start justify-start gap-[15px]">
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-off-white z-[1]"></div>
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-gray box-border z-[1] border-[0.5px] border-solid border-silver"></div>
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-gray box-border z-[1] border-[0.5px] border-solid border-silver"></div>
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-gray box-border z-[1] border-[0.5px] border-solid border-silver"></div>
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-gray box-border z-[1] border-[0.5px] border-solid border-silver"></div>
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-gray box-border z-[1] border-[0.5px] border-solid border-silver"></div>
-            <div className="h-1.5 w-1.5 relative rounded-18xl bg-gray box-border z-[1] border-[0.5px] border-solid border-silver"></div>
-          </div>
         </div>
-      </section>
-      <section className="self-stretch h-[695px] flex flex-row items-start justify-end py-0 pr-3.5 pl-5 box-border max-w-full shrink-0">
-        <div className="self-stretch flex-1 relative rounded-[21px] bg-dimgray shrink-0 max-w-full"></div>
-      </section>
+      </div>
     </div>
   );
 };

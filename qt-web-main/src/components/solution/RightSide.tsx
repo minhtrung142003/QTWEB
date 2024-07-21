@@ -12,6 +12,7 @@ const RightSide: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false,
     appendDots: (dots: React.ReactNode) => (
       <div
         style={{
@@ -30,19 +31,19 @@ const RightSide: React.FC = () => {
   };
   return (
     <div>
-      <div className="rounded-l-[4px] mb-[30px] mt-[23px] mr-[35px] rounded-r-[8px] border-[1px_solid_#515151] absolute right-[31px]  w-[557px] h-[790px] box-sizing-border">
+      <div className="rounded-l-[4px] mb-[30px] mt-[23px] mr-[30px] rounded-r-[8px] border-[1px_solid_#515151] absolute right-[31px]  w-[590px] h-[790px] box-sizing-border">
         <Slider {...settings}>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full h-[792px] object-cover" />
           </div>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full h-[792px] object-cover" />
           </div>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full h-[792px] object-cover" />
           </div>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full h-[792px] object-cover" />
           </div>
         </Slider>
       </div>
