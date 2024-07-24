@@ -32,19 +32,40 @@ const RightShow: React.FC = () => {
   };
   return (
     <div>
-      <div className="rounded-l-[4px] mb-[30px] mt-[23px] mr-[10px] rounded-r-[8px] border-[1px_solid_#515151] absolute right-[31px]  w-[557px] h-[790px] box-sizing-border">
+      <div 
+          className="
+          rounded-l-[4px] 
+          mb-[30px]
+          md:mt-[155px]
+          lg:mt-[200px]
+          xl:mt-[23px] 
+          md:mr-[55px]
+          xl:mr-[35px] 
+          xxl:mr-[40px]
+          rounded-r-[8px] 
+          border-[1px_solid_#515151] 
+          absolute right-[31px] 
+          md:w-[350px]
+          lg:w-[560px] 
+          x912:w-[470px]
+          xl:w-[607px] 
+          2xl:w-[557px] 
+          xxl:w-[900px]
+          x3l:w-[1200px]
+          h-[790px] 
+          box-sizing-border">
         <Slider {...settings}>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover " />
+            <img src={impad} alt="iPad" className=" w-full md:h-[530px] lg:h-[650px] xl:h-[720px] 2xl:h-[690px] xxl:h-[1000px] x3l:h-[1500px] object-cover " />
           </div>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full md:h-[530px] lg:h-[650px] xl:h-[720px] 2xl:h-[690px] xxl:h-[1000px] x3l:h-[1500px] object-cover" />
           </div>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full md:h-[530px] lg:h-[650px] xl:h-[720px] 2xl:h-[690px] xxl:h-[1000px] x3l:h-[1500px] object-cover" />
           </div>
           <div>
-            <img src={impad} alt="iPad" className=" w-full h-[760px] object-cover" />
+            <img src={impad} alt="iPad" className=" w-full md:h-[530px] lg:h-[650px] xl:h-[720px] 2xl:h-[690px] xxl:h-[1000px] x3l:h-[1500px] object-cover" />
           </div>
         </Slider>
       </div>

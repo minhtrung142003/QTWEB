@@ -4,11 +4,16 @@ import React from "react";
 
 const Solution: React.FC = () => {
   return (
-    <div className="container"
-     >
-      <section className="h-[707px] flex flex-col items-center justify-center my-[73px]">
-        <div className="flex flex-col w-full h-full, my-auto" >
-          <div className="flex flex-row items-start justify-center gap-[44px]">
+    <div className="container">
+      <section
+        className="
+          w-full flex flex-col 
+          items-center justify-center
+         
+          "
+      >
+        <div className="flex flex-col w-full , my-auto  ">
+          <div className="flex flex-row items-start justify-center relative gap-[24px] ">
             <LeftSide />
             <RightSide />
           </div>

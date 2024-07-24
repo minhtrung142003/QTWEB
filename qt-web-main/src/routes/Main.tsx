@@ -1,4 +1,5 @@
 
+import MarketPlace from '@pages/marketplace/MarketPlace';
 import Showcase from '@pages/showcase/ShowCase';
 import Solution from '@pages/solution/Solution';
 import React from 'react'
@@ -10,7 +11,7 @@ const Main: React.FC = () => {
     <Routes>
       <Route path="/" element={<Solution />} />
       <Route path="/showcase" element={<Showcase/>} />
-   
+      <Route path="/marketPlace" element={<MarketPlace/>} />
     </Routes>
   </Router>
   )

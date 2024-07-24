@@ -4,12 +4,17 @@ import React from "react";
 
 const Showcase: React.FC = () => {
   return (
-    <div className="flex flex-col w-full h-full, my-auto mx-auto">
-      <div className="flex flex-row items-start justify-center gap-[10px]">
+ 
+      <div className="
+          flex 
+          items-start 
+          justify-center 
+          w-full
+          h-full
+          ">
         <LeftShow />
         <RightShow />
       </div>
-    </div>
   );
 };
 
