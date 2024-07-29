@@ -1,12 +1,11 @@
-import Main from '@routes/Main'
-import React from 'react'
-import "./App.css"
-const App: React.FC = () => {
-  return (
-  <div className='container'>
-      <Main/>
-  </div>
-  )
-}
+import "./App.css";
+import Main from "@routes/Main";
 
-export default App
+function App() {
+  return (
+    <>
+      <Main />
+    </>
+  );
+}
+export default App;
