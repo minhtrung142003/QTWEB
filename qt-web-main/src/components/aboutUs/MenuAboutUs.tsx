@@ -18,7 +18,7 @@ const [active, setActive] = useState(0);
  }
 const itemsMnu = ['Our Visions', 'Our Team', 'Our Contact']
   return (  
-    <div className='container flex w-full justify-center'>
+    <div className='container flex w-full justify-center mb-6'>
         <ul className='container w-fit flex rounded-[37px] bg-[#70462D]'>
             {itemsMnu.map((item, index) => (
              <li 

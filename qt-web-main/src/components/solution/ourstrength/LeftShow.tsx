@@ -2,19 +2,19 @@ import React from 'react';
 import { SolutionOurStrength } from '@constants/index';
 const LeftShow: React.FC = () => {
     return (
-        <div className="w-[50%] h-full flex-1 flex flex-col">
-            <div className="flex gap-x-5">
-                <span className="font-bold text-[#F9F9F9] md:text-[24px] xl:text-[32px]">
+        <div className="w-full h-full flex-1 flex flex-col ">
+            <div className="flex md:gap-x-3 xl:gap-x-5 mt-[-3%]">
+                <span className="font-bold text-[#F9F9F9] lg:text-[21px] xl:text-[28px] 2xl:text-[32px]">
                     <span>Together, we bring</span>
                 </span>
-                <b className="text-colorOrgane md:text-[24px] xl:text-[32px] ">
+                <b className="text-colorOrgane  lg:text-[21px] xl:text-[28px] 2xl:text-[32px] ">
                     <span>your buidlings</span>
                 </b>
-                <span className="font-bold text-[#F9F9F9] md:text-[24px] xl:text-[32px] ">
+                <span className="font-bold text-[#F9F9F9] lg:text-[21px] xl:text-[28px] 2xl:text-[32px] ">
                     to life.
                 </span>
             </div>
-            <div className="container grid grid-cols-3 gap-y-[28px] gap-x-12">
+            <div className="container grid grid-cols-3 gap-y-[20px] gap-x-7 md:mt-5 xl:mt-2">
                 {Array.from({ length: 9 }).map((_, index) => (
                     <SolutionOurStrength key={index} />
                 ))}

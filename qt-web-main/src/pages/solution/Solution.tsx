@@ -10,6 +10,7 @@ const Solution: React.FC = () => {
             <SideBar type2={true} activeIndex={1} />
             <ItemContainer extraCss="pt-9 pl-10">
                 <LeftSide />
+                <RightSide />
             </ItemContainer>
         </div>
     );

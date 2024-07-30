@@ -2,9 +2,9 @@ import { RightArrow } from "@constants/index";
 
 export function DivOurVision() {
     return (
-      <div className=" w-[281px] h-[234px]">
+      <div className="">
         <svg
-          className=" top-0 left-0"
+          className=" top-0 left-0  md:w-56 xl:w-[281px] md:h-60 xl:h-[234px] "
           width="276"
           height="235"
           viewBox="0 0 276 235"
@@ -17,20 +17,20 @@ export function DivOurVision() {
             fill="#FEF1E0"
           />
         </svg>
-        <div className="absolute inset-0 flex flex-col justify-start items-start ml-[78px] mt-14 ">
+        <div className="absolute inset-0 flex flex-col justify-start items-start md:ml-[68px] xl:ml-[78px] mt-14 ">
           <h3 className="font-bold text-[16px] text-[#64402B]">
             TIÊU ĐỀ CHÍNH
           </h3>
-          <p className="text-[14px] font-normal text-[#64402B] mt-2 -mb-[2px]">
+          <p className="md:text-[10px] xl:text-[14px] font-normal text-[#64402B] mt-2 -mb-[2px]">
             Mô tả kỹ hơn về mục tiêu
           </p>
-          <span className="text-[14px] font-normal text-[#64402B] -mb-[2px]">
+          <span className="md:text-[10px] xl:text-[14px] font-normal text-[#64402B] -mb-[2px]">
             của giai đoạn này.
           </span>
-          <span className="text-[14px] font-normal text-[#64402B] -mb-[2px]">
+          <span className="md:text-[10px] xl:text-[14px] font-normal text-[#64402B] -mb-[2px]">
             Dài ba dòng.
           </span>
-          <div className="text-[14px] font-normal text-[#64402B] mt-6">
+          <div className="md:text-[10px] xl:text-[14px] font-normal text-[#64402B] mt-6">
             <span className="underline-container z-50">
               <a className="mr-1 -my-1" href="">
                 Link tham khảo

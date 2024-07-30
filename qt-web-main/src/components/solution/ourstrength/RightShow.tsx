@@ -1,10 +1,9 @@
 import React from "react";
-import impad from "@assets/solution/ipad.png";
-import Slider from "react-slick";
+import impad from "@assets/showcase/IpadShow.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const RightSide: React.FC = () => {
+import Slider from "react-slick";
+const RightShow: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -41,5 +40,4 @@ const RightSide: React.FC = () => {
     </div>
   );
 };
-
-export default RightSide;
+export default RightShow;

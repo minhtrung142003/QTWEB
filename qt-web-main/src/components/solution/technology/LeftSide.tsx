@@ -3,7 +3,8 @@ import { SvgTechnology } from "./SvgTechnology";
 import { items, content2 } from "./Data";
 const LeftSide: React.FC = () => {
   return (
-    <div className="container w-[50%] h-full">
+    <div className="container w-[50%] h-full mx-2">
+      {/* content 1 */}
       <div className="w-full h-[50%] mt-[-4%]">
         <div className="flex space-x-4">
           <h3 className="text-[32px] font-bold text-colorWhite">Support</h3>
@@ -37,27 +38,28 @@ const LeftSide: React.FC = () => {
 
       {/* content 2 */}
       <div className="w-full h-[50%] md:mt-[-3%] xl:mt-3">
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 md:translate-y-3 xl:-translate-y-2">
           <h3 className="text-[32px] font-bold text-colorWhite">
             With the lastest
           </h3>
           <h3 className="text-[32px] font-bold text-colorOrgane">Technology</h3>
         </div>
 
-        <div className="container w-full h-full grid grid-cols-3  md:gap-x-20 xl:gap-x-8 md:mt-[-3%] xl:mt-0 ">
+        <div className="container w-full h-full grid grid-cols-3  md:gap-x-20 xl:gap-x-6 2xl:gap-x-8 md:mt-[10%] xl:mt-0 ">
         {content2.map((item, index) => (
           <div
             key={index}
-            className="w-full h-full col-span-1 flex flex-col justify-center items-center md:p-[79px] xl:p-20 relative group"
+            className="w-full md:h-[60%] xl:h-[95%] 2xl:h-full col-span-1 flex flex-col justify-center items-center md:px-[79px] xl:px-0 relative group"
           >
             <SvgTechnology />
             <img
               src={item.src}
-              className={`z-20 -translate-y-7 object-contain   ${item.text === "Web development" ? "md:max-w-28 xl:max-w-36" : "scale-150 md:max-w-12 xl:max-w-full"}`}
+              className={`z-20 -translate-y-7 object-contain   
+                ${item.text === "Web development" ? "md:max-w-28 xl:max-w-36" : "scale-150 md:max-w-12 xl:max-w-16"}`}
               alt={item.text}
             />
-            <div className="md:w-28 xl:w-36 md:h-5 xl:h-7 md:my-5 xl:my-3 2xl:my-0 md:mx-[-10%] xl:mx-[-3%] 2xl:mx-0 rounded-xl bg-white flex items-center justify-center absolute bottom-[40px] left-16 transition-all duration-300 group-hover:opacity-100 group-hover:bg-colorOrgane">
-              <p className="font-bold md:text-[12px] xl:text-[16px] group-hover:text-white">
+            <div className="md:w-[108px] xl:w-[138px] 2xl:w-36 md:h-5 xl:h-6 2xl:h-7 md:my-[-11%] xl:my-3 2xl:my-[-2%] md:mx-[-10%] xl:mx-[-1%] 2xl:mx-2   rounded-xl bg-white flex items-center justify-center absolute bottom-[40px] left-16 transition-all duration-300 group-hover:opacity-100 group-hover:bg-colorOrgane">
+              <p className="font-bold md:text-[12px] xl:text-[14px]  group-hover:text-white">
                 {item.text}
               </p>
             </div>

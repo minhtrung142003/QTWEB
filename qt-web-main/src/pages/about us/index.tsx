@@ -1,6 +1,6 @@
 import MenuAboutUs from "@components/aboutUs/MenuAboutUs";
-import OurTeam from "@components/aboutUs/OurTeam";
-import OurVision from "@components/aboutUs/OurVision";
+import OurTeam from "@components/aboutUs/ourteam/OurTeam";
+import OurVision from "@components/aboutUs/ourvision/OurVision";
 import ItemContainer from "@components/commons/container/Container";
 import SideBar from "@components/commons/sidebar/sidebar";
 import { useState } from "react";

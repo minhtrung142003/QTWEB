@@ -139,7 +139,7 @@ export function ContainerShowCase() {
 
 export function SolutionOurStrength() {
   return (
-    <div className="px-2 w-full h-full rounded-2xl [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] text-center flex flex-col items-center justify-center">
+    <div className="px-2 py-1 w-full h-full rounded-2xl opacity-75 [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] text-center flex flex-col items-center justify-center">
       <img src={magni} alt="Icon" className="w-[59px] h-[60px] mt-[24px]" />
       <div className=" bg-[#FFFFFF] opacity-66 rounded-full md:w-[90px] xl:w-[140px] md:h-[17px] xl:h-[27px] flex items-center justify-center">
         <h3 className="font-bold md:text-[10px] xl:text-sm">Customized UI</h3>
@@ -155,6 +155,7 @@ export function ItemOurVision() {
   return (
     <div className="container">
       <svg
+        className="md:h-48 xl:h-full md:mt-5 xl:mt-0"
         width="244"
         height="235"
         viewBox="0 0 244 235"
@@ -169,16 +170,16 @@ export function ItemOurVision() {
       </svg>
       <div className="absolute inset-0 flex flex-col justify-start items-start ml-[78px] mt-14 ">
         <h3 className="font-bold text-[16px] text-[#64402B]">TIÊU ĐỀ CHÍNH</h3>
-        <p className="text-[14px] font-normal text-[#64402B] mt-2 -mb-[2px]">
-          Mô tả kỹ hơn về mục tiêu
+        <p className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] mt-2 -mb-[2px] ">
+          Mô tả kỹ hơn về mục 
         </p>
-        <span className="text-[14px] font-normal text-[#64402B] -mb-[2px]">
-          của giai đoạn này.
+        <span className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] -mb-[2px]">
+        tiêu của giai đoạn này.
         </span>
-        <span className="text-[14px] font-normal text-[#64402B] -mb-[2px]">
+        <span className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] -mb-[2px]">
           Dài ba dòng.
         </span>
-        <div className="text-[14px] font-normal text-[#64402B] mt-6">
+        <div className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] mt-6">
           <span className="underline-container z-50">
             <a className="mr-1 -my-1" href="">
               Link tham khảo

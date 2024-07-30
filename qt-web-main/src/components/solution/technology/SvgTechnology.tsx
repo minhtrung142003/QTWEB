@@ -1,7 +1,7 @@
 export function SvgTechnology() {
   return (
     <svg
-      className=" w-full  md:mt-[-19%] lg:mt-[-28%] 2xl:mt-[-16%] absolute  group-hover:drop-shadow-solution-shadow transition-all duration-300   " 
+      className=" w-full  h-full  lg:mt-[-28%] 2xl:mt-[-16%] absolute  group-hover:drop-shadow-solution-shadow transition-all duration-300   " 
       width={232}
       height={233}
       viewBox="0 0 232 261"
