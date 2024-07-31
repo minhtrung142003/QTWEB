@@ -1,5 +1,5 @@
 import "./App.css";
-import Main from "@routes/Main";
+import Main from "@routes/RoutesContainer";
 
 function App() {
   return (

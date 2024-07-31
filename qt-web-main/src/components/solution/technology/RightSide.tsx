@@ -32,7 +32,7 @@ const RightSide: React.FC = () => {
   };
   const images = [impad, impad, impad, impad];
   return (
-    <div className=" md:w-[38%] xl:w-[45%] 2xl:w-[50%] h-[90vh] absolute md:right-[1%] xl:right-[-4%] 2xl:right-[-9%] md:top-[1%] xl:top-[-13%] overflow-hidden">
+    <div className=" md:w-[38%] xl:w-[45%] 2xl:w-[50%] h-[90vh] absolute md:right-[1%] xl:right-[-3%] xxxl:right-[-5%] 2xl:right-[-9%] md:top-[1%] xl:top-[-13%] overflow-hidden">
       <Slider {...settings}>
           {images.map((img, index) => (
               <img key={index} src={img} className="w-[100vw] md:h-full xl:h-[90vh] object-contain" {...settings}/>

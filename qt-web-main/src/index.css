@@ -32,10 +32,13 @@ h1 {
 .background-white {
     background-color: white !important;
 }
+.showcase-menu-right::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
 .top-menu::before {
     content: '';
     position: absolute;
-    left: -5%;
+    left: calc(0% - 25px);
     border-bottom: 57px solid rgba(240, 240, 240, 0.35);
     border-left: 25px solid transparent;
     height: 0;
@@ -71,5 +74,10 @@ h1 {
     :root {
         color: #213547;
         background-color: #ffffff;
+    }
+}
+@media (min-width: 1536px) {
+    .top-menu::before {
+        left: -5%;
     }
 }

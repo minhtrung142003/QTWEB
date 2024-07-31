@@ -3,6 +3,7 @@ module.exports = {
     theme: {
         extend: {
             boxShadow: {
+                'active-icon': '0px 0px 20px #22d3ee',
                 'demo-active': '2px 2px 0px rgba(148, 92, 60, 0.5)',
                 'custom-shadow': '4px 4px rgba(0, 0, 0, 1)',
                 'active-btn': '4px 4px rgba(112, 70, 45, 0.4)', // Gộp cả định nghĩa này vào một chỗ
@@ -55,10 +56,12 @@ module.exports = {
             },
             gridTemplateColumns: {
                 '3/1': '75% 25%',
+                'custom-3': '0.9fr 0.9fr 0.6fr',
             },
             clipPath: {
                 'custom-triangle': 'polygon(100% 52%, 68% 0, 68% 100%)',
             },
+          
         },
         plugins: ['@tailwindcss/clip-path'],
     },

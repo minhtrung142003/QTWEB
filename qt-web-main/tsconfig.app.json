@@ -37,7 +37,8 @@
       "@services/*": ["./services/*"],
       "@axios/*": ["./axios/*"],
       "@themes/*": ["./themes/*"],
-      "@hooks/*": ["./hooks/*"]
+      "@hooks/*": ["./hooks/*"],
+      "@configs/*": ["./configs/*"]
     }
   },
   "include": ["src"]

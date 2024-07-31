@@ -1,5 +1,4 @@
 import SideBar from '@components/commons/sidebar/sidebar';
-import Container from '@components/showcase/Container';
 import MainShowcase from '@components/showcase/MainShowcase';
 import { ContainerShowCase } from '@constants/index';
 import React from 'react';

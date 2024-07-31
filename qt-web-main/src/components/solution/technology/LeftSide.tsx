@@ -45,7 +45,7 @@ const LeftSide: React.FC = () => {
           <h3 className="text-[32px] font-bold text-colorOrgane">Technology</h3>
         </div>
 
-        <div className="container w-full h-full grid grid-cols-3  md:gap-x-20 xl:gap-x-6 2xl:gap-x-8 md:mt-[10%] xl:mt-0 ">
+        <div className="container w-full h-full 2xl:h-[85%] grid grid-cols-3  md:gap-x-20 xl:gap-x-6 2xl:gap-x-8 md:mt-[10%] xl:mt-0 ">
         {content2.map((item, index) => (
           <div
             key={index}
@@ -58,8 +58,8 @@ const LeftSide: React.FC = () => {
                 ${item.text === "Web development" ? "md:max-w-28 xl:max-w-36" : "scale-150 md:max-w-12 xl:max-w-16"}`}
               alt={item.text}
             />
-            <div className="md:w-[108px] xl:w-[138px] 2xl:w-36 md:h-5 xl:h-6 2xl:h-7 md:my-[-11%] xl:my-3 2xl:my-[-2%] md:mx-[-10%] xl:mx-[-1%] 2xl:mx-2   rounded-xl bg-white flex items-center justify-center absolute bottom-[40px] left-16 transition-all duration-300 group-hover:opacity-100 group-hover:bg-colorOrgane">
-              <p className="font-bold md:text-[12px] xl:text-[14px]  group-hover:text-white">
+            <div className="md:w-[102px] xl:w-[130px] xxxl:w-[138px] 2xl:w-36 md:h-5 xl:h-6 xxxl:h-7 2xl:h-7 md:my-[-11%] xl:my-3 xxxl:my-[-2%] 2xl:my-[-14%] md:mx-[-10%] xl:mx-[-5%] xxxl:mx-2 2xl:mx-2 rounded-xl bg-white flex items-center justify-center absolute bottom-[40px] left-16 transition-all duration-300 group-hover:opacity-100 group-hover:bg-colorOrgane">
+              <p className="font-bold md:text-[11px] xl:text-[14px]  group-hover:text-white">
                 {item.text}
               </p>
             </div>

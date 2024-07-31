@@ -1,6 +1,9 @@
 import { RightArrow } from "@constants/index";
 
-export function DivOurVision() {
+interface DivOurVisionProps {
+  backgroundColor?: string;
+}
+export function DivOurVision({backgroundColor}: DivOurVisionProps) {
     return (
       <div className="">
         <svg
@@ -14,7 +17,7 @@ export function DivOurVision() {
           <path
             opacity="0.8"
             d="M1.33595 9.23274C-1.02287 5.23299 1.86065 0.184814 6.50414 0.184814H203.573C205.697 0.184814 207.662 1.30755 208.741 3.1369L274.203 114.137C275.312 116.017 275.312 118.352 274.203 120.233L208.741 231.233C207.662 233.062 205.697 234.185 203.573 234.185H6.50415C1.86066 234.185 -1.02288 229.137 1.33595 225.137L63.2025 120.233C64.3116 118.352 64.3116 116.018 63.2025 114.137L1.33595 9.23274Z"
-            fill="#FEF1E0"
+            fill={backgroundColor || "#FEF1E0"}
           />
         </svg>
         <div className="absolute inset-0 flex flex-col justify-start items-start md:ml-[68px] xl:ml-[78px] mt-14 ">

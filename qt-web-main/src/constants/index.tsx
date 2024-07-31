@@ -139,12 +139,15 @@ export function ContainerShowCase() {
 
 export function SolutionOurStrength() {
   return (
-    <div className="px-2 py-1 w-full h-full rounded-2xl opacity-75 [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] text-center flex flex-col items-center justify-center">
-      <img src={magni} alt="Icon" className="w-[59px] h-[60px] mt-[24px]" />
-      <div className=" bg-[#FFFFFF] opacity-66 rounded-full md:w-[90px] xl:w-[140px] md:h-[17px] xl:h-[27px] flex items-center justify-center">
-        <h3 className="font-bold md:text-[10px] xl:text-sm">Customized UI</h3>
+    <div className="px-2 md:py-3 xl:py-1 w-full xl:h-[95%] xxxl:h-full 
+                  rounded-2xl opacity-75 [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] 
+                  text-center flex flex-col items-center justify-center  
+                  group  border-2 hover:border-[#945c3c] hover:shadow-hover transition-all  ">
+      <img src={magni} alt="Icon" className="md:w-16 xl:w-[59px] md:h-14 xl:h-[60px] xl:mt-[24px] 2xl:mt-4 -translate-y-2 " />
+      <div className=" bg-[#FFFFFF] opacity-66 rounded-full md:w-[90px] xl:w-[140px] md:h-[17px] xl:h-[27px] flex items-center justify-center group-hover:bg-[#945c3c]  ">
+        <h3 className="font-bold md:text-[10px] xl:text-sm  group-hover:text-white">Customized UI</h3>
       </div>
-      <p className="md:text-[6px] xl:text-[9px] 2xl:text-xs mt-[6px]">
+      <p className="md:text-[8px] xl:text-[10px] xxxl:text-[11px] 2xl:text-xs mt-[6px]">
         We offer customized UI based on your needs and requirements
       </p>
     </div>

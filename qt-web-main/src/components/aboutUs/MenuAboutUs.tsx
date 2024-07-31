@@ -13,10 +13,10 @@ const [active, setActive] = useState(0);
         handleScreen('Our Contact');
     }
     else if(index === 0 ) {
-        handleScreen('Our Visions');
+        handleScreen('Our Vision');
     }
  }
-const itemsMnu = ['Our Visions', 'Our Team', 'Our Contact']
+const itemsMnu = ['Our Vision', 'Our Team', 'Our Contact']
   return (  
     <div className='container flex w-full justify-center mb-6'>
         <ul className='container w-fit flex rounded-[37px] bg-[#70462D]'>

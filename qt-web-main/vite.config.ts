@@ -21,6 +21,7 @@ export default defineConfig({
       "@axios": path.resolve(__dirname, "./src/axios"),
       "@themes": path.resolve(__dirname, "./src/themes"),
       "@hooks": path.resolve(__dirname, "./src/hooks"),
+      "@configs": path.resolve(__dirname, "./src/configs"),
     },
   },
 

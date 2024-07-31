@@ -93,19 +93,20 @@ const MenuHome: React.FC<MenuHomeProps> = ({
                                         className="home-item-dropdown"
                                         onClick={() => handleClick(index)}
                                     >
-                                        Our Vision
+                                        <Link to="/our-vision">Our Vision</Link>
                                     </li>
                                     <li
                                         className="home-item-dropdown"
                                         onClick={() => handleClick(index)}
                                     >
-                                        Our Team
+                                        {' '}
+                                        <Link to="/our-team">Our Team</Link>
                                     </li>
                                     <li
                                         className="home-item-dropdown"
                                         onClick={() => handleClick(index)}
                                     >
-                                        Contact Us
+                                        <Link to="/contact-us">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

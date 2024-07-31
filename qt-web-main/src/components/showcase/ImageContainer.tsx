@@ -1,7 +1,8 @@
 import container from '@assets/showcase/container.png';
 import { useState } from 'react';
-import { GiParkBench } from 'react-icons/gi';
-import { SiOpenlayers } from 'react-icons/si';
+import ShowcaseLeftMenu from './LeftMenu';
+import ShowcaseRightMenu from './RightMenu';
+import ShowcaseBottomMenu from './BottomMenu';
 
 export default function ImageContainer() {
     const [showImage, setShowImage] = useState(false);
@@ -14,10 +15,9 @@ export default function ImageContainer() {
                 }`}
                 style={{ backgroundImage: `url(${container})` }}
             >
-                <div className="absolute left-0 top-[40%] bg-black ">
-                    <GiParkBench size={70} />
-                    <SiOpenlayers size={70} className="text-white" />
-                </div>
+                <ShowcaseLeftMenu />
+                <ShowcaseRightMenu />
+                <ShowcaseBottomMenu />
             </div>
             <button
                 onClick={() => {

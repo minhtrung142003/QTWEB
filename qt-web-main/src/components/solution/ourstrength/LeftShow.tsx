@@ -14,7 +14,7 @@ const LeftShow: React.FC = () => {
                     to life.
                 </span>
             </div>
-            <div className="container grid grid-cols-3 gap-y-[20px] gap-x-7 md:mt-5 xl:mt-2">
+            <div className="container grid grid-cols-3 md:gap-y-4 xl:gap-y-2 xxxl:gap-y-3 2xl:gap-y-[20px] md:gap-x-4 xl:gap-x-5 xxxl:gap-x-4 2xl:gap-x-6 md:mt-5 xl:mt-2 ">
                 {Array.from({ length: 9 }).map((_, index) => (
                     <SolutionOurStrength key={index} />
                 ))}
