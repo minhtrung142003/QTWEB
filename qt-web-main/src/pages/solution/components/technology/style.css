@@ -1,0 +1,67 @@
+.content1 {
+  @apply w-full  flex flex-col ;
+}
+.header1 {
+  @apply flex space-x-2 text-[32px] font-bold;
+}
+.header1 .support {
+  @apply text-colorWhite;
+}
+.header1 .all-platform {
+  @apply text-colorOrgane;
+}
+.itemscontent1 {
+  @apply w-full grid grid-cols-6 mt-[28px] xl:gap-x-3 md:max-xl:gap-x-2;
+}
+
+.item-gridcontent1 {
+  @apply col-span-1  rounded-lg  bg-[#CDCDCE] flex flex-col justify-center items-center w-full border border-transparent hover:border-[#945c3c] hover:text-[#945c3c] hover:shadow-hover transition-all;
+}
+.image-content1 {
+  @apply w-full h-full max-h-[50%] max-w-[60%] object-contain py-3;
+}
+.text-content1 {
+  @apply text-center text-base md:max-xl:text-sm font-semibold xxxl:max-xxl:my-1 xxl:my-2;
+}
+
+/* content 2 */
+.content2 {
+  @apply w-full h-fit flex flex-col gap-y-4; 
+}
+.header2 {
+  @apply flex space-x-2 text-[32px] font-bold;
+}
+.items-content2 {
+  @apply w-full h-full grid grid-cols-3 gap-x-7 xxxl:max-xxl:gap-x-12;
+}
+.grid-content2 {
+  @apply w-full h-fit flex flex-col relative;
+}
+.item-gridcontent2 {
+  @apply w-full h-[200px] md:max-xxxl:h-[150px]
+  rounded-xl rounded-bl-none col-span-1 flex bg-[#CDCDCE] justify-center items-center
+   border border-transparent transition-all;
+  @apply group-hover:border-[#945c3c] group-hover:shadow-hover;
+}
+.image-content2 {
+  @apply w-full h-full max-h-[60%] max-w-[60%] object-contain;
+}
+.clip-path-2 {
+  @apply bg-[#CDCDCE] h-32 w-40 md:max-xl:h-32 md:max-xxxl:w-32 border-2 rounded-xl transition-all absolute left-0 bottom-0 translate-y-[30%];
+  @apply group-hover:border-[#945c3c] group-hover:shadow-hover;
+}
+.grid-item-text {
+  @apply absolute -bottom-3 right-0 translate-y-[100%] 
+  rounded-2xl bg-white w-[159px] md:max-xl:w-28 h-[31px] md:max-xl:h-6 xxxl:max-xxl:h-7 flex justify-center items-center opacity-75 transition-all group-hover:text-white group-hover:bg-[#945c3c];
+}
+.item-text {
+  @apply text-[16px] md:max-xl:text-xs font-bold;
+}
+
+/* rightside */
+.container-rightside {
+  @apply w-full h-[90vh] md:max-xl:h-full  absolute bottom-0 right-[13px] rounded-md overflow-hidden;
+}
+.image-rightside {
+  @apply w-full h-[90vh] object-cover;
+}

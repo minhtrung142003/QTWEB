@@ -1,11 +1,11 @@
-import "./App.css";
-import Main from "@routes/RoutesContainer";
+import './App.css';
+import RoutesContainer from '@routes/RoutesContainer';
 
 function App() {
-  return (
-    <>
-      <Main />
-    </>
-  );
+    return (
+        <>
+            <RoutesContainer />
+        </>
+    );
 }
 export default App;

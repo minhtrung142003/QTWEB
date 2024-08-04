@@ -90,7 +90,7 @@ export function CardBackground() {
 interface RightArrowProps {
   className: string;
 }
-export function RightArrow({ className }: RightArrowProps) {
+export function RightArrow({}: RightArrowProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -139,16 +139,21 @@ export function ContainerShowCase() {
 
 export function SolutionOurStrength() {
   return (
-    <div className="px-2 md:py-3 xl:py-1 w-full xl:h-[95%] xxxl:h-full 
-                  rounded-2xl opacity-75 [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] 
-                  text-center flex flex-col items-center justify-center  
-                  group  border-2 hover:border-[#945c3c] hover:shadow-hover transition-all  ">
-      <img src={magni} alt="Icon" className="md:w-16 xl:w-[59px] md:h-14 xl:h-[60px] xl:mt-[24px] 2xl:mt-4 -translate-y-2 " />
-      <div className=" bg-[#FFFFFF] opacity-66 rounded-full md:w-[90px] xl:w-[140px] md:h-[17px] xl:h-[27px] flex items-center justify-center group-hover:bg-[#945c3c]  ">
-        <h3 className="font-bold md:text-[10px] xl:text-sm  group-hover:text-white">Customized UI</h3>
+    <div className="rounded-xl border-[#8A8A8A] opacity-75 [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] 
+                 group border-2 hover:border-[#945c3c] hover:shadow-hover transition-all  2xl:max-xxl:py-3 py-5 text-center flex flex-col items-center justify-center xxl:gap-y-2 md:max-xl:gap-y-1 ">
+      <img
+        src={magni}
+        alt="Icon"
+        className="md:w-10 2xl:w-[59px] md:h-10 2xl:h-[60px]"
+      />
+      <div className=" bg-[#FFFFFF] rounded-full w-fit h-[27px] px-5 md:max-xl:h-5 flex items-center justify-center group-hover:bg-[#945c3c]">
+        <h3 className="font-bold text-sm group-hover:text-white">
+          Customized UI
+        </h3>
       </div>
-      <p className="md:text-[8px] xl:text-[10px] xxxl:text-[11px] 2xl:text-xs mt-[6px]">
-        We offer customized UI based on your needs and requirements
+      <p className="text-xs md:max-xl:text-[10px]  font-medium ">
+        We offer customized UI based on
+        <br /> your needs and requirements
       </p>
     </div>
   );
@@ -174,10 +179,10 @@ export function ItemOurVision() {
       <div className="absolute inset-0 flex flex-col justify-start items-start ml-[78px] mt-14 ">
         <h3 className="font-bold text-[16px] text-[#64402B]">TIÊU ĐỀ CHÍNH</h3>
         <p className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] mt-2 -mb-[2px] ">
-          Mô tả kỹ hơn về mục 
+          Mô tả kỹ hơn về mục
         </p>
         <span className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] -mb-[2px]">
-        tiêu của giai đoạn này.
+          tiêu của giai đoạn này.
         </span>
         <span className="md:text-[12px] xl:text-[14px] font-normal text-[#64402B] -mb-[2px]">
           Dài ba dòng.
