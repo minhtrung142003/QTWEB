@@ -25,8 +25,8 @@ useEffect(() => {
  }
 const itemsMnu = ['Our Vision', 'Our Team', 'Our Contact']
   return (  
-    <div className='container flex w-full justify-center mb-6'>
-        <ul className='container w-fit flex rounded-[37px] bg-[#70462D]'>
+    <div className=' flex w-full h-[10%] justify-center mb-6'>
+        <ul className=' w-fit flex rounded-[37px] bg-[#70462D]'>
             {itemsMnu.map((item, index) => (
              <li 
                 key={index}

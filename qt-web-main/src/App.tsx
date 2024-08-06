@@ -1,5 +1,5 @@
 import './App.css';
-import RoutesContainer from '@routes/RoutesContainer';
+import RoutesContainer from '@routes/index';
 
 function App() {
     return (

@@ -19,9 +19,6 @@
     z-index: -1; /* Đảm bảo gạch chân nằm dưới nội dung */
 }
 
-.transform-move {
-    transform: translateX(28px);
-}
 
 /* custom.css */
 .organe-shadow {

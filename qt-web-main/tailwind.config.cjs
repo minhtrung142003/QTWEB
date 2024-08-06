@@ -9,6 +9,7 @@ module.exports = {
                 'active-btn': '4px 4px rgba(112, 70, 45, 0.4)', // Gộp cả định nghĩa này vào một chỗ
                 custom: '2px 2px 0px rgba(148, 92, 60, 0.5)',
                 hover: '0 8px 20px rgba(148, 92, 60, 0.6)',
+                'card-hover': '4px 4px rgba(249,115,22,0.4)',
             },
             colors: {
                 'main-100': '#CCE9D7',
@@ -37,16 +38,16 @@ module.exports = {
                 x3l: '2560px',
                 x24: '2496px',
                 x2340: '2340px',
-                laptop: '1368px',
+                laptop: '1365px',
             },
             fillOpacity: {
                 'hover-10': '0.1',
                 'default-70': '0.7',
             },
             gridTemplateColumns: {
-                 24: 'repeat(24, minmax(0, 1fr))',
+                24: 'repeat(24, minmax(0, 1fr))',
                 '3/1': '75% 25%',
-                'custom-3': "0.9fr 0.9fr 0.6fr",
+                'custom-3': '0.9fr 0.9fr 0.6fr',
             },
             gridColumn: {
                 'span-13': 'span 13 / span 13',
@@ -65,7 +66,7 @@ module.exports = {
             },
             borderRadius: {
                 customborder: '20px 4px 20px 4px', // top-left, top-right, bottom-right, bottom-left
-                'custom-xl': '1rem 1rem 0 0'
+                'custom-xl': '1rem 1rem 0 0',
             },
             backgroundImage: {
                 'custom-gradient':
@@ -73,7 +74,7 @@ module.exports = {
             },
             clipPath: {
                 'custom-triangle': 'polygon(100% 52%, 68% 0, 68% 100%)',
-                'custom-solution':  'polygon(0 76%, 27% 76%, 14% 100%, 0 100%)',
+                'custom-solution': 'polygon(0 76%, 27% 76%, 14% 100%, 0 100%)',
             },
         },
         plugins: ['@tailwindcss/clip-path'],

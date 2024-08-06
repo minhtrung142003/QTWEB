@@ -11,7 +11,7 @@ import House10 from '@assets/solution/visualization/house10.png';
 
 export default function GalleryImages() {
     return (
-        <div className="container w-full h-full overflow-auto grid grid-cols-24 md:max-xl:grid-rows-image-gallery gap-y-2 gap-x-2">
+        <div className=" w-full h-full overflow-auto grid grid-cols-24 md:max-xl:grid-rows-image-gallery gap-y-2 gap-x-2">
             {/* row 1 */}
             <div
                 className="md:max-xl:col-span-9 col-span-5 w-full row-span-1 h-full bg-cover bg-center cursor-pointer"

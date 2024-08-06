@@ -38,7 +38,7 @@
   @apply w-full h-fit flex flex-col relative;
 }
 .item-gridcontent2 {
-  @apply w-full h-[200px] md:max-xxxl:h-[150px]
+  @apply w-full h-[200px] 2xl:max-xxl:h-[170px] md:max-xxxl:h-[150px]
   rounded-xl rounded-bl-none col-span-1 flex bg-[#CDCDCE] justify-center items-center
    border border-transparent transition-all;
   @apply group-hover:border-[#945c3c] group-hover:shadow-hover;

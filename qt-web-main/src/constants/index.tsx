@@ -151,7 +151,7 @@ export function SolutionOurStrength() {
           Customized UI
         </h3>
       </div>
-      <p className="text-xs md:max-xl:text-[10px]  font-medium ">
+      <p className="text-xs font-medium ">
         We offer customized UI based on
         <br /> your needs and requirements
       </p>

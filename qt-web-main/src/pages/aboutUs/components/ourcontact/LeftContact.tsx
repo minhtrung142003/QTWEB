@@ -9,34 +9,28 @@ const LeftContact: React.FC = () => {
       <div className="header_contact">
         <p className="text-[#2A753F]">
           Schedule
-          <span className="text-[#4F4F4F] ml-5">a time with us to</span>
+          <span className="text-[#4F4F4F] ml-2">a time with us to</span>
         </p>
       </div>
       {/* content 1 */}
-      <div className="content1_contact">
-        {Array.from({ length: 4 }).map((_, index) => (
-          <div
-            key={index}
-            className={`items_content1 ${ 
-              index >= 2 ? "translate-x-32" : ""
-            }`}
-          >
-            <img src={magni} alt="Icon" className="w-[59px] h-[60px]" />
-            <div className="container_text">
-              <h3 className="customized_ui">
-                Customized UI
-              </h3>
-            </div>
-            <p className="p_text_content1">
-              We offer customized UI based on
-              <br/> your needs and requirements
-            </p>
+    <div className="content1_contact">
+      {Array.from({length: 4}).map((_, index) => (
+          <div key={index} className={`items_content1 ${index >=2 ? 'translate-x-[8.5rem]' :''}`}>
+          <img src={magni} className="img_content1" />
+          <div className="container_text">
+              <p className="customized_ui">Customized UI</p>
           </div>
-        ))}
+          <span className="p_text_content1">We offer customized UI based on 
+            <br/>your needs and requirements</span>
       </div>
+      ))}
+        
+        
+        
+        
+    </div>
       {/* content 2 */}
-      <div 
-        className="content2_contact">
+      <div className="content2_contact">
       {itemContact.map((item, index) => (
         <div key={index}  className="item_grid_content2">
           <div 

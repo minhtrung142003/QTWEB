@@ -21,12 +21,12 @@ const Header: React.FC<SidebarProps> = ({
             : ' flex justify-between z-10 absolute top-[36px] header-home';
     return (
         <div className={headerClass}>
-            <div className="section-left flex items-center md:max-laptop:text-sm">
+            <div className="section-left flex items-center max-laptop:text-sm">
                 <Logo />
                 <MenuHome type={type} active={active} setActive={setActive} />
             </div>
             {type === 'ver1' && (
-                <div className="section-right flex items-center mr-7">
+                <div className="section-right flex items-center max-laptop:text-sm mr-7">
                     <Search />
                     <Login />
                 </div>

@@ -1,9 +1,9 @@
 import AboutUs from '@pages/aboutUs/AboutUs';
 import Home from '@pages/home';
-import ShowCase from '@pages/showcase/ShowCase';
+import ShowCase from '@pages/showcase';
 import OurStrength from '@pages/solution/components/ourstrength/Index';
 import Solution from '@pages/solution/components/technology/Index';
-import SolutionVisualization from '@pages/solution/SolutionVisualization';
+import SolutionVisualization from '@pages/solution/components/visualization';
 import { RouteProps } from 'react-router-dom';
 
 const LayoutRoutes: RouteProps[] = [

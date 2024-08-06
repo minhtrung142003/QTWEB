@@ -18,9 +18,9 @@ const OurVision: React.FC = () => {
         }
     } 
   return (
-    <div className="w-full h-full flex flex-col flex-1 md:max-xxxl:py-8 py-20">
+    <div className="w-full h-full flex flex-col flex-1 md:max-xxxl:py-8 xxxl:max-xxl:py-0 py-20">
      
-      <div className="flex flex-row justify-center items-center z-10 md:max-xl:-space-x-[57px] -space-x-[72px] ml-10">
+      <div className="flex flex-row justify-center items-center z-10 w-full md:max-xl:-space-x-[57px] -space-x-[72px] ml-[22px] ">
         <ItemOne />
         {Numbers.map((number, index) => (
             <ItemTwo_Four stepNumber={number} backgroundColor={getBackground(index)} />

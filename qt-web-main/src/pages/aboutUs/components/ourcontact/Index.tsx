@@ -5,10 +5,10 @@ import RightContact from "./RightContact";
 const OurContact: React.FC = () => {
   return (
     <div className="container w-full h-full flex flex-row ">
-      <div className="w-[60%] h-full">
+      <div className="w-[58%] h-full">
         <LeftContact />
       </div>
-      <div className="w-[40%] h-full translate-y-4">
+      <div className="w-[42%] h-full mt-[35px]">
         <RightContact />
       </div>
     </div>

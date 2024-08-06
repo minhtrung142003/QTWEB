@@ -10,10 +10,10 @@ export default function SolutionVisualization() {
         setScreen(screen);
     };
     return (
-        <div className="container flex flex-col w-full gap-y-8 flex-1 h-screen home-container">
+        <div className=" flex flex-col w-full h-full gap-y-8 flex-1">
             <ItemContainer extraCss="pt-2 pb-11 px-7 flex flex-col">
                 {screen === 'overview' && (
-                    <div className="container h-full w-full flex flex-col ">
+                    <div className=" h-[90%] w-full flex flex-col ">
                         <p className="font-bold text-3xl text-white text-start">
                             We can offer you{' '}
                             <span className="text-active-color">more</span> than
@@ -23,7 +23,7 @@ export default function SolutionVisualization() {
                     </div>
                 )}
                 {screen === 'rendering' && (
-                    <div className="container w-full h-full px-[22px] overflow-auto">
+                    <div className=" w-full h-[90%] overflow-auto">
                         <GalleryImages />
                     </div>
                 )}

@@ -17,10 +17,10 @@ export default function AboutUs({ page = "Our Vision" }) {
   }, [page]);
 
   return (
-    <div className=" w-full h-dvh flex flex-col gap-y-8 ">
+    <div className=" w-full h-full flex flex-col ">
       <ItemContainer extraCss="flex flex-col">
         {screen === "Our Vision" && (
-          <div className="h-full w-full flex flex-col items-center">
+          <div className="h-[90%] w-full flex flex-col items-center">
             <div className=" flex flex-col items-center xxxl:max-xxl:translate-y-4 translate-y-6 ">
               <p className="font-bold text-2xl xxl:text-3xl text-[#606060] text-start">
                 And we have even{" "}
@@ -36,12 +36,12 @@ export default function AboutUs({ page = "Our Vision" }) {
           </div>
         )}
         {screen === "Our Contact" && (
-          <div className=" h-full w-full flex flex-col px-7">
+          <div className=" h-[90%] w-full flex flex-col px-7">
             <OurContact />
           </div>
         )}
         {screen === "Our Team" && (
-          <div className=" h-full w-full flex flex-col px-7">
+          <div className=" h-[90%] w-full flex flex-col px-7">
             <OurTeam />
           </div>
         )}
