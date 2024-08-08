@@ -8,14 +8,10 @@ const Content1: React.FC = () => {
                 <div
                     key={index}
                     className={`items_team
-                         ${
-                             index !== 0
-                                 ? 'organe-shadow-extra'
-                                 : 'organe-shadow'
-                         }
-                          flex justify-center md:px-7 xl:px-8 md:py-6 xl:py-8 2xl:py-9 ${
-                              index % 2 !== 0 ? 'xxxl:mt-[30px] ' : ''
-                          }  md:max-w-40 md:h-52 xl:max-w-[198px] xl:h-64 2xl:h-[282px]`}
+                     ${index !== 0 ? 'organe-shadow-extra' : 'organe-shadow'}
+                      flex justify-center md:px-7 xl:px-8 md:py-6 xl:py-8 2xl:py-9 ${
+                          index % 2 !== 0 ? 'xl:translate-y-[30px] ' : ''
+                      }   w-full h-[281px] flex justify-center items-center`}
                 >
                     <div
                         className={`item_bg`}

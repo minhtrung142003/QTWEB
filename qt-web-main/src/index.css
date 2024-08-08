@@ -45,6 +45,7 @@ h1 {
 /* width */
 ::-webkit-scrollbar {
     width: 6px;
+    padding: 5px;
 }
 
 /* Track */

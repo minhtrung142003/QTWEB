@@ -10,7 +10,7 @@ import RightArrow from '@assets/svg/RightArrow';
 function CardItems() {
     return (
         <div className="w-full h-full flex items-center overflow-auto">
-            <div className="w-full h-full items-center justify-items-center grid grid-cols-5 lg:max-xl:grid-cols-4 md:max-lg:grid-cols-3 max-md:grid-cols-2 max-[520px]:grid-cols-1 gap-[15px] ">
+            <div className="w-full h-full items-center justify-items-center grid grid-cols-5 pr-3 lg:max-xl:grid-cols-4 md:max-lg:grid-cols-3 max-md:grid-cols-2 max-[520px]:grid-cols-1 gap-[15px] ">
                 <CardItem
                     title="Consultation"
                     image1={Gallery1}

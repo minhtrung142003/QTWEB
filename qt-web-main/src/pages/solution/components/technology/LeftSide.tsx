@@ -4,7 +4,7 @@ import "./style.css";
 const LeftSide: React.FC = () => {
   return (
     <div className=" max-w-[100%] h-full flex flex-col gap-[48px] overflow-y-auto overflow-x-hidden pr-4 box-border ">
-      <div className="content1  ">
+      <div className="content1">
         <div className="header1">
           <h3 className="support">Support</h3>
           <h3 className="all-platform">All Platforms</h3>

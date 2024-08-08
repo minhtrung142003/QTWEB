@@ -1,8 +1,9 @@
 .container_leftshow {
-    @apply max-w-[100%] h-full min-h-0 flex flex-col -translate-x-[2px] xxxl:max-xxl:-translate-y-6 overflow-y-auto overflow-x-hidden pr-4 box-border 
+    @apply max-w-[100%] h-full min-h-0 flex flex-col 2xl:max-xxl:mt-6 ml-[2px]
+    -translate-x-[2px] xxxl:max-xxl:-translate-y-6 overflow-y-auto overflow-x-hidden pr-4 box-border 
 }
 .content_leftshow {
-    @apply flex text-[32px] md:max-xl:text-[24px]
+    @apply flex text-[32px] md:max-lg:text-[12px] lg:max-xl:text-[24px]
 }
 .items_leftshow{
     @apply  grid grid-cols-3 md:max-xl:grid-cols-2 gap-x-7 md:max-xl:gap-y-3 md:max-xl:gap-x-3  xl:max-2xl:gap-y-3 xxxl:max-xxl:gap-y-3 xxxl:max-xxl:gap-x-3  xxxl:max-2xl:gap-x-5 gap-y-7 xl:max-xxxl:gap-x-3 mt-5

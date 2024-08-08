@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemDate: React.FC = () => {
   return (
-    <div className="flex md:max-xl:py-2 xl:max-xxxl:py-3 py-8 font-bold md:max-xl:text-base text-xl w-full justify-center  ">
+    <div className="flex md:max-xl:pt-1 xl:max-xxxl:pt-3 pt-8 font-bold md:max-xl:text-base text-xl w-full justify-center md:max-lg:-translate-y-5 md:max-lg:px-6">
       <div className="flex items-center justify-center xxl:ml-8 ">
         <p className="text-white whitespace-nowrap">
           1<sup>st</sup> Quarter - 2023

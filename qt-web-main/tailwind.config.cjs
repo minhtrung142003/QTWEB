@@ -29,16 +29,13 @@ module.exports = {
                 border: 'border',
             },
             screens: {
-                x768: '768px',
                 xxl: '1920px',
-                x912: '912px',
-                x820: '820px',
-                x884: '884px',
                 xxxl: '1440px',
                 x3l: '2560px',
                 x24: '2496px',
                 x2340: '2340px',
                 laptop: '1365px',
+               
             },
             fillOpacity: {
                 'hover-10': '0.1',

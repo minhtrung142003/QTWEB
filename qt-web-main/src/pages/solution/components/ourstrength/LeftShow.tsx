@@ -4,7 +4,7 @@ import "./style.css";
 const LeftShow: React.FC = () => {
   return (
     <div className="container_leftshow">
-      <div className="content_leftshow flex  space-x-2 ">
+      <div className="content_leftshow flex md:space-x-1 lg:space-x-2 ">
         <span className="font-bold text-[#F9F9F9]">
           <span>Together, we bring</span>
         </span>

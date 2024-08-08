@@ -14,6 +14,6 @@ export const itemContact = [
 ];
 
 export const ItemRight = [
-  { label: "First Name", required: "Last Name" },
-  { label: "Email", required: "Phone" },
+  { label: "First Name", required: "Last Name", description:"Company" },
+  { label: "Email", required: "Phone", description:"What would you like to discuss?" },
 ];

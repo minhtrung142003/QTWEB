@@ -140,18 +140,19 @@ export function ContainerShowCase() {
 export function SolutionOurStrength() {
   return (
     <div className="rounded-xl border-[#8A8A8A] opacity-75 [background:linear-gradient(126.92deg,_rgba(240,_240,_240,_1),_rgba(228,_228,_228,_1))] 
-                 group border-2 hover:border-[#945c3c] hover:shadow-hover transition-all  2xl:max-xxl:py-3 py-5 text-center flex flex-col items-center justify-center xxl:gap-y-2 md:max-xl:gap-y-1 ">
+                 group border-2 hover:border-[#945c3c] hover:shadow-hover transition-all   text-center flex flex-col items-center justify-center
+                 2xl:max-xxl:py-3 md:max-lg:py-3 py-5 xxl:gap-y-2 md:max-xl:gap-y-1 ">
       <img
         src={magni}
         alt="Icon"
         className="md:w-10 2xl:w-[59px] md:h-10 2xl:h-[60px]"
       />
-      <div className=" bg-[#FFFFFF] rounded-full w-fit h-[27px] px-5 md:max-xl:h-5 flex items-center justify-center group-hover:bg-[#945c3c]">
-        <h3 className="font-bold text-sm group-hover:text-white">
+      <div className=" bg-[#FFFFFF] rounded-full w-fit h-[27px] md:max-lg:px-2 px-5 md:max-xl:h-5 flex items-center justify-center group-hover:bg-[#945c3c]">
+        <h3 className="font-bold md:max-lg:text-[10px] text-sm group-hover:text-white">
           Customized UI
         </h3>
       </div>
-      <p className="text-xs font-medium ">
+      <p className="md:max-lg:text-[7px] text-xs font-medium ">
         We offer customized UI based on
         <br /> your needs and requirements
       </p>

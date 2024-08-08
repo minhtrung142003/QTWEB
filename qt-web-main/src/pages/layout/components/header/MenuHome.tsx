@@ -1,7 +1,7 @@
 import { MenuBar } from '@assets/svg/MenuBar';
 import './menuhome.css';
-import { Dispatch, SetStateAction, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 interface MenuHomeProps {
     type: string;
@@ -20,6 +20,31 @@ const MenuHome: React.FC<MenuHomeProps> = ({
         { name: 'Marketplace', link: '/showcase' },
         { name: 'About Us', link: '/about_us' },
     ];
+    const location = useLocation();
+    const currentPath = location.pathname;
+    useEffect(() => {
+        console.log(`Current path: ${currentPath}`);
+        switch (currentPath) {
+            case '/':
+                setActiveIndex(0);
+                break;
+            case '/solution_technology':
+            case '/solution_ourstrength':
+            case '/solution_visual':
+                setActiveIndex(1);
+                break;
+            case '/showcase':
+                setActiveIndex(2);
+                break;
+            case '/our-vision':
+            case '/our-team':
+            case '/contact-us':
+                setActiveIndex(4);
+                break;
+            default:
+                setActiveIndex(0);
+        }
+    }, [currentPath]);
     const [activeIndex, setActiveIndex] = useState(active);
     function handleClick(index: number) {
         setActiveIndex(index);
@@ -33,7 +58,7 @@ const MenuHome: React.FC<MenuHomeProps> = ({
                     item.name === 'Solution' ? (
                         <li
                             key={index}
-                            className={`home-item hover-item group relative font-bold hover:shadow-none hover:text-hover-color transition-all duration-500 ${
+                            className={`home-item hover-item group relative font-bold hover:shadow-none hover:text-hover-color  transition-[width] duration-500 ${
                                 index === activeIndex
                                     ? 'text-active-color active'
                                     : ''
@@ -78,7 +103,7 @@ const MenuHome: React.FC<MenuHomeProps> = ({
                     ) : item.name === 'About Us' ? (
                         <li
                             key={index}
-                            className={`home-item hover-item group min-w-max relative hover:text-hover-color  transition-all duration-500 ${
+                            className={`home-item hover-item group min-w-max relative hover:text-hover-color  transition-[width] duration-500 ${
                                 index === activeIndex
                                     ? 'text-active-color active'
                                     : ''
@@ -118,7 +143,7 @@ const MenuHome: React.FC<MenuHomeProps> = ({
                     ) : (
                         <li
                             key={index}
-                            className={`home-item hover-item hover:text-hover-color  transition-all duration-500 ${
+                            className={`home-item hover-item hover:text-hover-color  transition-[width] duration-500 ${
                                 index === activeIndex
                                     ? 'text-active-color active'
                                     : ''
