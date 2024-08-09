@@ -3,16 +3,16 @@
     -translate-x-[2px] xxxl:max-xxl:-translate-y-6 overflow-y-auto overflow-x-hidden pr-4 box-border 
 }
 .content_leftshow {
-    @apply flex text-[32px] md:max-lg:text-[12px] lg:max-xl:text-[24px]
+    @apply flex text-[32px] lg:max-xl:text-[24px]
 }
 .items_leftshow{
-    @apply  grid grid-cols-3 md:max-xl:grid-cols-2 gap-x-7 md:max-xl:gap-y-3 md:max-xl:gap-x-3  xl:max-2xl:gap-y-3 xxxl:max-xxl:gap-y-3 xxxl:max-xxl:gap-x-3  xxxl:max-2xl:gap-x-5 gap-y-7 xl:max-xxxl:gap-x-3 mt-5
+    @apply  grid grid-cols-3 lg:max-xl:grid-cols-2 gap-x-7 md:max-xl:gap-y-3 md:max-xl:gap-x-3  xl:max-2xl:gap-y-3 xxxl:max-xxl:gap-y-3 xxxl:max-xxl:gap-x-3  xxxl:max-2xl:gap-x-5 gap-y-7 xl:max-xxxl:gap-x-3 2xl:max-xxl:mt-1 mt-5
 }
 
 /* rightshow */
 .container_rightshow {
-    @apply w-full h-[90vh] md:max-xl:h-full absolute bottom-0 right-[13px] rounded-md overflow-hidden;
+    @apply w-full md:max-lg:w-[80%] md:max-lg:h-auto h-[90vh] lg:max-xl:h-full absolute md:max-lg:-bottom-3 bottom-0 md:max-lg:right-24 right-[13px] rounded-md overflow-hidden;
 }
 .image_rightshow {
-    @apply w-full h-[90vh]  object-cover;
+    @apply w-full h-[90vh] md:max-lg:h-[45vh] md:max-lg:object-fill lg:object-cover;
 }

@@ -5,6 +5,7 @@ export interface TeamMember {
     description: string;
     backgroundColor: string;
     textColor: string;
+    className?: string;
   }
   
   export const itemsOurTeam: TeamMember[] = [

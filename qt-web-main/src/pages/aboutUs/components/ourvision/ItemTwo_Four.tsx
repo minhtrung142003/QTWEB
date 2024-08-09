@@ -3,6 +3,7 @@ import { RightArrow } from "@constants/index";
 interface DivOurVisionProps {
   backgroundColor?: string;
   stepNumber: string;
+  className?: string;
 }
 
 export function ItemTwo_Four({ backgroundColor, stepNumber }: DivOurVisionProps) {

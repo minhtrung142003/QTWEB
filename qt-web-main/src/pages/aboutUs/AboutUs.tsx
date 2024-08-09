@@ -36,7 +36,7 @@ export default function AboutUs({ page = 'Our Vision' }) {
           </div>
         )}
         {screen === "Our Contact" && (
-          <div className=" h-[90%] w-full flex flex-col px-7">
+          <div className=" h-[90%] w-full flex flex-col px-7 ">
             <OurContact />
           </div>
         )}

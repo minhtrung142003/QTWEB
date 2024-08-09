@@ -34,7 +34,7 @@ const LeftContact: React.FC = () => {
         ))}
       </div>
       {/* content 2 */}
-      <div className="w-[100%] pr-12 pl-9 mt-4 md:max-xxxl:pl-2 md:max-xxxl:pr-10  ">
+      <div className="w-[100%] pr-12 pl-9 mt-4 md:max-xxxl:pl-2 lg:max-xl:pr-4 xl:max-xxxl:pr-10   ">
         <div className="content2_contact">
           {itemContact.map((item, index) => (
             <div key={index} className="item_grid_content2">

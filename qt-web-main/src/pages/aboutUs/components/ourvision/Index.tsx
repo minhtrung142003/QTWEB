@@ -20,12 +20,14 @@ const OurVision: React.FC = () => {
       <div className="flex flex-row  justify-center items-center z-10 w-full md:max-lg:flex-wrap md:max-xl:-space-x-[57px] -space-x-[72px] md:max-lg:ml-1 ml-[22px] ">
         <ItemOne />
         {Numbers.map((number, index) => (
-          <ItemTwo_Four
-            stepNumber={number}
-            backgroundColor={getBackground(index)}
-          />
+          <div className={`${index ===2 ? 'md:max-lg:w-full md:max-lg:flex md:max-lg:justify-end md:max-lg:-translate-y-7 md:max-lg:-translate-x-56 ' : ''}`}>
+            <ItemTwo_Four
+              stepNumber={number}
+              backgroundColor={getBackground(index)}
+            />
+          </div>
         ))}
-        <div className="md:max-lg:w-full md:max-lg:flex md:max-lg:justify-start items-center md:max-lg:-translate-y-7">
+        <div className="md:max-lg:w-full md:max-lg:flex  md:max-lg:justify-end md:max-lg:-translate-y-[20.8rem]">
           <ItemFive />
         </div>
       </div>
