@@ -1,5 +1,4 @@
 // data.ts
-
 export interface TeamMember {
     role: string;
     description: string;
@@ -8,7 +7,7 @@ export interface TeamMember {
     className?: string;
   }
   
-  export const itemsOurTeam: TeamMember[] = [
+export const itemsOurTeam: TeamMember[] = [
     {
       role: "PROJECT MANAGER",
       description: "Description Kinda Long",
@@ -46,5 +45,4 @@ export interface TeamMember {
       textColor: "#F0F0F0",
     },
   ];
-
- export const Numbers = [ '02', '03', '04']
+export const Numbers = [ '02', '03', '04']

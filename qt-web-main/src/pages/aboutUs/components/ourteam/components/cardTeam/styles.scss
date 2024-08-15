@@ -1,0 +1,37 @@
+.cardTeam {
+  @apply w-full h-full min-h-[300px] gap-[30px]  max-h-[360px] cursor-pointer flex flex-col items-center justify-between px-[14px] pb-[23px] pt-[40px] rounded-xl bg-[#E1E1E170];
+
+  border: 1px solid #945c3c;
+
+  &:hover {
+    box-shadow: 3px 3px 0 #945c3c70;
+
+    .cardTeam__avatar {
+      @apply bg-[#DDC3B4];
+    }
+
+    .cardTeam__work {
+      @apply bg-[#945c3c] text-white;
+    }
+  }
+
+  &__avatar {
+    @apply xl:w-[160px] w-[140px] xl:h-[160px] h-[140px] rounded-full bg-[#f0f0f0];
+  }
+
+  &__info {
+    @apply w-full flex flex-col gap-[6px];
+  }
+
+  &__work {
+    @apply w-full py-[6px] bg-[#f2f2f2] rounded-full text-center text-[12px] text-[#434343] font-bold;
+
+    font-family: "Inter";
+  }
+
+  &__sub {
+    @apply w-full text-center text-[12px] text-[#434343];
+
+    font-family: "Inter";
+  }
+}

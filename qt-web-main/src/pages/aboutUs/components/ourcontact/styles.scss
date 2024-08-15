@@ -1,0 +1,16 @@
+.aboutUs__contact {
+  @apply w-full h-full flex flex-col xl:grid xl:grid-cols-24 gap-[47px]  xl:pr-0 pr-[6px];
+
+  @media (max-width: 1280px) {
+    height: calc(100dvh - 265px);
+    overflow: auto;
+  }
+
+  &-left {
+    @apply w-full xl:h-full xl:col-span-14;
+  }
+
+  &-right {
+    @apply w-full xl:h-full xl:col-span-10;
+  }
+}

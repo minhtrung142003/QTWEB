@@ -1,0 +1,14 @@
+.ourstrength__content {
+  @apply w-full flex flex-col gap-[25px];
+
+  height: calc(100dvh - 185px);
+
+  &-title {
+    @apply w-full text-left font-bold text-[32px] text-[#dbdbdb];
+    font-family: "Inter";
+  }
+
+  &-card {
+    @apply w-full h-full grid 2xl:grid-cols-4 grid-cols-3 gap-[26px] overflow-auto pr-[6px];
+  }
+}

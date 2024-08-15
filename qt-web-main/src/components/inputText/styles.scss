@@ -1,0 +1,21 @@
+.inputText {
+  @apply w-full h-fit flex flex-col justify-start gap-1;
+
+  &__title {
+    @apply w-full pl-3 text-left text-[14px] text-[#464646] font-medium;
+
+    font-family: "Inter";
+  }
+
+  &__input {
+    @apply w-full h-[40px] p-[10px] text-[14px] text-[#464646] font-medium rounded-md bg-transparent border-[1px] border-white;
+    font-family: "Inter";
+
+    &:focus {
+      border-color: #52525291;
+      box-shadow: 0 0 5px rgba(43, 43, 43, 0.5);
+      outline: none;
+      background: #ffffff;
+    }
+  }
+}

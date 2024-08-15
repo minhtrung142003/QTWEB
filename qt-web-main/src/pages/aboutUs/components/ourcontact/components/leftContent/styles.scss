@@ -1,0 +1,49 @@
+.contact__left {
+  @apply w-full h-full flex flex-col gap-5;
+
+  @media (min-width: 1280px) {
+    height: calc(100dvh - 273px);
+    overflow: auto;
+    padding-right: 6px;
+  }
+
+  &-title {
+    @apply w-full h-fit text-left font-bold text-[32px] text-[#2A753F];
+    font-family: "Inter";
+  }
+
+  &-content {
+    @apply w-full h-fit grid grid-cols-24 grid-rows-2 gap-3;
+
+    &-item--1 {
+      @apply row-span-1 col-start-3 col-span-8;
+    }
+
+    &-item--2 {
+      @apply row-span-1 col-start-11 col-span-8;
+    }
+
+    &-item--3 {
+      @apply row-span-1 row-start-2 col-start-8 col-span-8;
+    }
+
+    &-item--4 {
+      @apply row-span-1 row-start-2 col-start-[16] col-span-8;
+    }
+  }
+
+  &-footer {
+    @apply w-full h-fit mt-6 py-[12px] grid grid-cols-24 rounded-xl border-[#945C3C] border-[1px] bg-[#E1E1E170];
+
+    &-item--1 {
+      @apply col-span-9;
+    }
+
+    &-item--2 {
+      @apply col-span-8;
+    }
+    &-item--3 {
+      @apply col-span-7;
+    }
+  }
+}

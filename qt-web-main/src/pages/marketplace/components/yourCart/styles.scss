@@ -1,0 +1,34 @@
+.marketplace__cart {
+  @apply lg:h-full flex flex-col items-end lg:relative absolute lg:right-0 lg:top-0 right-2 top-4 lg:translate-x-0 translate-x-[130%];
+
+  transition: transform 1s ease-in;
+
+  @media (max-width: 1024px) {
+    height: calc(100dvh - 162px);
+  }
+
+  &-header {
+    @apply w-fit pr-5 pl-14 py-2 rounded-tl-lg flex gap-[14px] items-center;
+
+    background: #e1e1e1;
+    clip-path: polygon(20% 0, 100% 0%, 100% 99%, 0% 100%);
+  }
+
+  &-content {
+    @apply w-full h-full bg-[#e1e1e1] rounded-tl-lg rounded-b-lg p-5 flex flex-col;
+  }
+
+  &-feature {
+    @apply w-full flex justify-between mb-[16px];
+  }
+
+  &-product {
+    @apply w-full flex flex-col gap-[11px] overflow-auto pr-[6px] mb-[30px];
+
+    height: calc(100dvh - 521px);
+  }
+}
+.show {
+  @apply translate-x-0;
+  transition: transform 0.5s linear;
+}

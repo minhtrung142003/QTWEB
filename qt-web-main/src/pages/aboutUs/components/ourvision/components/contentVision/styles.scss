@@ -1,0 +1,25 @@
+.vision {
+  @apply w-full h-full flex flex-col justify-center overflow-y-auto overflow-x-hidden;
+
+  height: calc(100dvh - 340px);
+
+  @media (max-height: 1000px) {
+    @apply pt-[100px];
+  }
+
+  @media (max-height: 868px) {
+    @apply pt-[150px];
+  }
+
+  @media (max-height: 800px) {
+    @apply pt-[250px];
+  }
+
+  .underline_item1_vision {
+    @apply bg-[#FFFFFF] border-2 -ml-20 md:my-[-3px] xl:my-0 z-20;
+  }
+
+  .clip-custom-triangle {
+    clip-path: polygon(51% 0, 51% 100%, 100% 50%);
+  }
+}

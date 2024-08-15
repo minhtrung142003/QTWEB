@@ -1,0 +1,23 @@
+.marketplace__item {
+  @apply w-full flex lg:p-[8px] p-[4px] border-[2px] border-[#70462D] rounded-2xl lg:gap-[12px] gap-2;
+
+  &-image {
+    @apply lg:p-3 p-2 bg-white rounded-md;
+  }
+
+  &-inf {
+    @apply w-full flex-1 flex flex-col items-start justify-center;
+
+    &-title {
+      @apply lg:text-sm text-[12px] font-[600] text-[#464646];
+    }
+
+    &-sub {
+      @apply lg:px-4 px-2 lg:py-[5px] py-[2px] rounded-full bg-white lg:text-[12px] text-[10px] text-center;
+    }
+  }
+
+  &-price {
+    @apply flex flex-col justify-center items-end lg:ml-[9px];
+  }
+}

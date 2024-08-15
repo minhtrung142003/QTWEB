@@ -1,0 +1,39 @@
+.contact__right {
+  @apply w-full h-full  p-10  rounded-2xl border-[1px] border-[#2A753F] bg-[#E1E1E170];
+
+  @media (min-width: 1280px) {
+    height: calc(100dvh - 273px);
+  }
+
+  &-form {
+    @apply w-full h-fit flex-1 flex flex-col gap-[8px];
+
+    &-input {
+      @apply w-full h-fit flex flex-col gap-2;
+    }
+
+    &-row {
+      @apply w-full flex gap-3;
+    }
+
+    &-services {
+      @apply w-full flex flex-col gap-8;
+
+      &-title {
+        @apply w-full pl-3 text-left text-[14px] text-[#464646] font-medium;
+
+        font-family: "Inter";
+      }
+
+      &-content {
+        @apply w-full  h-full grid grid-cols-6  gap-[8px];
+      }
+    }
+  }
+
+  &-submit {
+    @apply w-full py-[11px] bg-[#2A753F] rounded-lg cursor-pointer text-[16px] text-white font-bold;
+
+    font-family: "Inter";
+  }
+}

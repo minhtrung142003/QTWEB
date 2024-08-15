@@ -1,0 +1,14 @@
+.marketplace__header {
+  @apply w-full h-fit flex items-center;
+
+  &-filler {
+    @apply pl-5 pr-14 py-2 rounded-tl-lg;
+
+    background: #e1e1e1;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  }
+
+  &-title {
+    @apply w-full text-center;
+  }
+}

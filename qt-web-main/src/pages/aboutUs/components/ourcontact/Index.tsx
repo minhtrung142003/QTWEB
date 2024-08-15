@@ -1,15 +1,15 @@
-import React from "react";
-import LeftContact from "./LeftContact";
-import RightContact from "./rightcontact/RightContact";
+import LeftContent from "./components/leftContent";
+import RightContent from "./components/rightContent";
+import "./styles.scss";
 
-const OurContact: React.FC = () => {
+const OurContact = () => {
   return (
-    <div className="container w-full h-full flex md:flex-col lg:flex-row pl-[12px] md:max-lg:overflow-y-auto md:max-lg:overflow-x-hidden xl:overflow-y-auto xl:overflow-x-hidden md:max-lg:pr-3 xl:pr-4 mt-9">
-      <div className="md:w-full lg:w-[58%] h-full xl:max-2xl:-mb-12 ">
-        <LeftContact />
+    <div className="aboutUs__contact">
+      <div className="aboutUs__contact-left">
+        <LeftContent />
       </div>
-      <div className="md:w-full lg:w-[42%] h-full xl:max-2xl:-mb-12 2xl:max-xxl:-mb-3 md:max-lg:mt-3">
-        <RightContact />
+      <div className="aboutUs__contact-right">
+        <RightContent />
       </div>
     </div>
   );

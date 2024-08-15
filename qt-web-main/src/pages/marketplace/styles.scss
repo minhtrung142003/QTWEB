@@ -1,0 +1,17 @@
+.marketplace {
+  @apply relative flex flex-col w-full overflow-hidden;
+
+  height: calc(100dvh - 130px);
+
+  &__login {
+    @apply absolute right-0 -top-20  gap-3 items-center z-50 lg:flex hidden;
+
+    &-icon {
+      @apply text-white size-8 cursor-pointer;
+    }
+
+    &-btn {
+      @apply bg-[#ffffff57] p-3 px-8 rounded-full shadow-demo-active cursor-pointer;
+    }
+  }
+}

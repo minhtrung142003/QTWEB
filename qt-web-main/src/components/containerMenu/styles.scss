@@ -1,0 +1,17 @@
+.containerMenu {
+  @apply w-full h-full flex flex-col px-[40px] py-[30px] rounded-lg;
+
+  background: linear-gradient(135deg, #f0f0f050, #e4e4e48c);
+  border: 2px solid;
+  border-image-slice: 0;
+  border-image-source: linear-gradient(135deg, #ffffff, #66666630);
+  border-width: 2px;
+
+  &__content {
+    @apply w-full h-full flex-1;
+  }
+
+  &__menu {
+    @apply w-full flex justify-center mt-[20px];
+  }
+}

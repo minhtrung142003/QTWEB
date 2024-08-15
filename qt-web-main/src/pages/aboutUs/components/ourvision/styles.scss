@@ -1,0 +1,23 @@
+.aboutUs__vision {
+  @apply w-full h-full flex flex-col items-center;
+
+  &-header {
+    @apply w-full h-fit flex flex-col gap-[10px] text-center;
+
+    &-title {
+      @apply text-[#606060] text-[28.25px] font-[500];
+
+      font-family: "Inter";
+    }
+
+    &-sub {
+      @apply text-[#606060] text-[14px];
+
+      font-family: "Inter";
+    }
+  }
+
+  &-content {
+    @apply w-full h-full flex-1;
+  }
+}

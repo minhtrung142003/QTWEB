@@ -1,0 +1,15 @@
+.marketplace__container {
+  @apply h-full w-full py-5 px-2 grid grid-cols-12 gap-4 rounded-2xl relative;
+
+  background: rgba(240, 240, 240, 0.35);
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  &-content {
+    @apply h-full flex flex-col;
+  }
+
+  &-listCard {
+    @apply w-full grid  gap-4 mt-[18px] pr-[8px] overflow-auto xl:h-[calc(100dvh-318px)] lg:h-[calc(100dvh-310px)] h-[calc(100dvh-330px)];
+  }
+}

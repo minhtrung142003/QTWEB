@@ -1,0 +1,17 @@
+.bottomMenu {
+  @apply w-fit h-fit flex items-center rounded-full overflow-hidden bg-[#945C3C];
+
+  &__item {
+    @apply lg:px-[20px] px-[15px] lg:py-[15px] py-[10px] text-white text-[14px] relative z-10;
+
+    font-family: "Inter";
+
+    &-selected {
+      @apply text-[#945C3C] font-bold bg-[#ffffff] rounded-full;
+    }
+  }
+
+  &__item:hover {
+    @apply text-[#945C3C] font-bold bg-[#ffffff] rounded-full;
+  }
+}

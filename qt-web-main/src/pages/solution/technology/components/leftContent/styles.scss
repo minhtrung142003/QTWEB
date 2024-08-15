@@ -1,0 +1,40 @@
+.technology__content {
+  @apply w-full flex flex-col gap-[32px] xl:overflow-auto pr-[6px];
+  @media (min-width: 1280px) {
+    height: calc(100dvh - 185px);
+  }
+
+  @media (max-width: 1280px) {
+    height: 100%;
+  }
+
+  &-title {
+    @apply w-full text-left font-bold text-[32px] text-[#dbdbdb];
+    font-family: "Inter";
+  }
+
+  &-platforms {
+    @apply w-full xl:h-full h-fit xl:flex-1 flex flex-col gap-[28px];
+
+    &-card {
+      // phần tử chẵn
+      > :nth-child(even) {
+        @apply mt-[25px];
+      }
+      // phần tử lẻ
+      > :nth-child(odd) {
+        @apply mb-[25px];
+      }
+
+      @apply w-full h-full grid grid-cols-6 gap-[13px];
+    }
+  }
+
+  &-cardTech {
+    @apply w-full xl:h-full h-fit xl:flex-1 flex flex-col gap-[28px];
+
+    &-card {
+      @apply w-full h-full grid grid-cols-3 gap-[29px];
+    }
+  }
+}

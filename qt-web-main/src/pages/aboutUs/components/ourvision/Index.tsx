@@ -1,37 +1,23 @@
-import React from "react";
-import "../aboutus.css";
-import ItemFive from "./ItemFive";
-import ItemDate from "./ItemDate";
-import ItemOne from "./ItemOne";
-import { ItemTwo_Four } from "./ItemTwo_Four";
-import { Numbers } from "@pages/aboutUs/DataAboutUs";
-const OurVision: React.FC = () => {
-  const getBackground = (index: number) => {
-    if (index === 0) {
-      return "#F0D8BB";
-    } else if (index === 1) {
-      return "#E5C39A";
-    } else {
-      return "#FEF1E0";
-    }
-  };
+import ContentVision from "./components/contentVision";
+import "./styles.scss";
+
+const OurVision = () => {
   return (
-    <div className="w-full h-full flex flex-col flex-1 md:max-xxxl:py-8 xxxl:max-xxl:py-0 py-20 ">
-      <div className="flex flex-row  justify-center items-center z-10 w-full md:max-lg:flex-wrap md:max-xl:-space-x-[57px] -space-x-[72px] md:max-lg:ml-1 ml-[22px] ">
-        <ItemOne />
-        {Numbers.map((number, index) => (
-          <div className={`${index ===2 ? 'md:max-lg:w-full md:max-lg:flex md:max-lg:justify-end md:max-lg:-translate-y-7 md:max-lg:-translate-x-56 ' : ''}`}>
-            <ItemTwo_Four
-              stepNumber={number}
-              backgroundColor={getBackground(index)}
-            />
-          </div>
-        ))}
-        <div className="md:max-lg:w-full md:max-lg:flex  md:max-lg:justify-end md:max-lg:-translate-y-[20.8rem]">
-          <ItemFive />
-        </div>
+    <div className="aboutUs__vision">
+      <div className="aboutUs__vision-header">
+        <h1 className="aboutUs__vision-header-title">
+          And we have even
+          <span className="text-[#945C3C] text-[35.31px]"> bigger</span> targets
+          to pursue
+        </h1>
+        <p className="aboutUs__vision-header-sub">
+          And we have even <span className="text-[#945C3C]">bigger </span>
+          targets to pursue
+        </p>
       </div>
-      <ItemDate />
+      <div className="aboutUs__vision-content">
+        <ContentVision />
+      </div>
     </div>
   );
 };

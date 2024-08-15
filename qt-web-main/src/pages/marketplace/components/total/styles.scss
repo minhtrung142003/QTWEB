@@ -1,0 +1,7 @@
+.marketplace__total {
+  @apply relative flex flex-col border border-[#2F7A49] p-[10px] pt-[23px] rounded-xl;
+
+  &-header {
+    @apply absolute top-0 -translate-y-1/2 left-[-1px] bg-[#2A753F] p-2 rounded-t-xl rounded-br-xl;
+  }
+}
