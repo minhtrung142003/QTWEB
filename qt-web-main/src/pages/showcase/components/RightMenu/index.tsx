@@ -6,8 +6,8 @@ export default function ShowcaseRightMenu() {
                 className="absolute mr-3 w-[11rem] h-[75%] flex flex-col right-0 bg-opacity-50 p-2 bg-black rounded-2xl"
                 style={{ top: 'calc(12.5% - 18px)' }}
             >
-                <div className="flex justify-center ">
-                    <button className="uppercase px-1 rounded-lg text-white bg-black bg-opacity-80">
+                <div className="flex gap-[5px] justify-center ">
+                    <button className="uppercase p-1 rounded-lg text-white bg-black bg-opacity-80">
                         Custom
                     </button>
                     <button className="uppercase p-1 rounded-lg text-white bg-[#22d3ee]">

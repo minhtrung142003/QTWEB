@@ -2,7 +2,7 @@ export default function Login() {
     return (
         <>
             <button
-                className="rounded-[60px] p-2 h-[38px] flex items-center lg:ml-6 sm:max-lg:ml-3 text-white"
+                className="rounded-[60px] p-2 h-[38px] flex items-center ml-1 text-white select-none"
                 style={{
                     background: '#939ba7',
                     border: '2px solid rgba(255, 255, 255, 0.3)',
@@ -14,4 +14,3 @@ export default function Login() {
         </>
     );
 }
-/* Rectangle 88 */

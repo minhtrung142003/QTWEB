@@ -1,0 +1,29 @@
+.cardOur {
+  @apply w-full h-fit px-2 py-4 xxl:py-10 flex flex-col items-center bg-[#E1E1E1] rounded-xl border  cursor-pointer;
+
+  &:hover {
+    @apply border-[#945C3C];
+    box-shadow: 3px 3px 0 #aa978c70;
+    background: linear-gradient(180deg, #f8f8f8, #d9d9d9);
+
+    .cardOur-title {
+      @apply bg-[#945C3C] text-white;
+    }
+  }
+
+  &-listImage {
+    @apply w-full flex justify-center gap-[2px] mb-[14px];
+  }
+
+  &-image {
+    @apply object-contain max-w-[40px] h-auto;
+  }
+
+  &-title {
+    @apply min-w-[130px] py-[5px] px-3 rounded-full mb-[5px];
+  }
+
+  &-subOurStrength {
+    @apply w-full text-center md:max-lg:text-[11px] text-[12px] text-[#292929] md:max-lg:px-[2px] lg:max-xl:px-[37px] xl:max-xxxl:px-1 px-6 xxl:px-16;
+  }
+}

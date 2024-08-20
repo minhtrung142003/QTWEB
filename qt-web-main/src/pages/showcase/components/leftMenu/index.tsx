@@ -25,7 +25,7 @@ export default function ShowcaseLeftMenu() {
                         size={20}
                         className={`text-white ${
                             index === activeIcon
-                                ? `bg-[#22d3ee] bg-opacity-35 shadow-active-icon`
+                                ? `bg-[#22d3ee] bg-opacity-30 shadow-active-icon`
                                 : ``
                         }`}
                     />

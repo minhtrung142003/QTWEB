@@ -1,12 +1,12 @@
 .visualization__rendering {
-  @apply w-full  flex flex-col gap-[7px] overflow-auto pr-[6px];
-  height: calc(100dvh - 268px);
+    @apply w-full  flex flex-col gap-[7px] overflow-auto pr-[6px];
+    height: calc(100dvh - 268px);
 
-  &-row {
-    @apply w-full min-h-[295px] flex-1 grid grid-cols-24 grid-rows-2 gap-[7px];
-  }
+    &-row {
+        @apply w-full xl:min-h-[295px] flex-1 grid grid-cols-24 grid-rows-2  gap-[7px];
+    }
 
-  &-card {
-    @apply w-full h-full object-cover;
-  }
+    &-card {
+        @apply w-full h-full object-cover;
+    }
 }

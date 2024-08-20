@@ -14,7 +14,7 @@
   @apply w-full grid  gap-y-10 xxxl:max-xxl:translate-y-4
    grid-cols-6  xl:gap-x-3 md:max-xl:gap-x-2;
 }
-
+/*  */
 .item-gridcontent1 {
   @apply col-span-1 rounded-lg  bg-[#CDCDCE] flex flex-col justify-center items-center w-full border border-transparent hover:border-[#945c3c] hover:text-[#945c3c] hover:shadow-hover transition-all;
 }

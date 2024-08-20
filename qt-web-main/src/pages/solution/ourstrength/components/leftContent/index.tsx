@@ -1,5 +1,5 @@
-import ItemCard from "@components/itemCard";
 import "./styles.scss";
+import ItemOurStrength from "@components/itemOurStrength";
 
 const LeftContent = () => {
   return (
@@ -9,12 +9,12 @@ const LeftContent = () => {
         <span className="text-[#945C3C]">your buidlings</span> to life.
       </h1>
       <div className="ourstrength__content-card">
-        {Array.from({ length: 50 }).map((_, index) => (
-          <ItemCard
+        {Array.from({ length: 9 }).map((_, index) => (
+          <ItemOurStrength
             icon={true}
             key={index}
-            title="Third person"
-            sub="We offer customized UI based on your needs"
+            title="Customized UI"
+            sub="We offer customized UI based on your needs and requirements"
           />
         ))}
       </div>

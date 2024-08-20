@@ -27,6 +27,7 @@ module.exports = {
             },
             transitionProperty: {
                 border: 'border',
+                width: 'width',
             },
             screens: {
                 xxl: '1920px',
@@ -35,7 +36,6 @@ module.exports = {
                 x24: '2496px',
                 x2340: '2340px',
                 laptop: '1365px',
-               
             },
             fillOpacity: {
                 'hover-10': '0.1',

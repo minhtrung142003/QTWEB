@@ -4,8 +4,8 @@ const MarketPlaceHeader = () => {
   return (
     <header className="marketplace__header">
       <div className="marketplace__header-filler ">
-        <p className="font-bold text-sm  h-7 w-28 content-center rounded-full bg-[#70462D] text-white">
-          Filler
+        <p className="font-bold text-sm  h-7 w-28 content-center rounded-full bg-[#70462D] text-white cursor-default">
+          Filter
         </p>
       </div>
       <div className="marketplace__header-title">

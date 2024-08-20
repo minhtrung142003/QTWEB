@@ -1,0 +1,19 @@
+.icon-search {
+    @apply cursor-pointer absolute z-10 transition-all duration-700;
+    top: calc(50% - 8px);
+}
+.search_container {
+    @apply flex max-w-[240px] w-[240px] md:max-lg:w-[120px] h-full gap-1 relative;
+}
+.search_input {
+    @apply absolute right-0 transition-[width] h-[34px] max-w-[240px] duration-700 rounded-2xl pl-[25px] p-[3px] text-white caret-white  outline-none border-2 border-transparent focus:border-[#ECECEC];
+    background: rgb(160, 169, 182);
+    top: calc(50% - 17px);
+}
+.search_box {
+    @apply absolute w-full top-full hidden rounded-2xl text-left px-[5px] py-[10px];
+    background: rgba(236, 236, 236, 0.7);
+}
+.search_result {
+    @apply max-h-60 w-full overflow-auto gap-y-4 flex-col;
+}

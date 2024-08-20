@@ -1,12 +1,4 @@
-.marketplace__filler {
+.marketplace__filter {
   @apply w-full gap-[14px] p-5 rounded-b-lg rounded-tr-lg;
   background: #e1e1e1;
-
-  &-item {
-    @apply bg-[#EAEAEA] border border-[#B9B9B9] lg:text-[14px] text-[12px] font-[500] whitespace-nowrap rounded-lg;
-  }
-
-  &-item.selected {
-    @apply bg-white border-[#945C3C] text-[#945C3C] shadow-sm shadow-[#945C3C];
-  }
 }

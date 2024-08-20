@@ -4,36 +4,85 @@ import "./styles.scss";
 import icon_1 from "@assets/icon-1.png";
 import icon_2 from "@assets/icon-2.png";
 import icon_3 from "@assets/icon-3.png";
+import icon_4 from "@assets/icon-4.png";
 import MarketPlaceHeader from "../header";
-import MarketPlaceFiller from "../fillter";
-import ItemCard from "../../../../components/itemCard";
+import MarketPlaceFilter from "../fillter";
 import MarketPlaceCart from "../yourCart";
+import { animated, useSpring } from "@react-spring/web";
+import ItemCard from "../itemCard";
 
-const listFiller: string[] = [
-  "Platform",
-  "Point of view",
-  "Interior",
-  "Exterior",
-  "Landscape",
-  "API",
+// const listFiller: string[] = [
+//   "Platform",
+//   "Point of view",
+//   "Interior",
+//   "Exterior",
+//   "Landscape",
+//   "API",
+// ];
+
+const ListFilter: IMarketPlaceFilterOption[] = [
+  {
+    value: "Platform",
+    label: "Platform",
+  },
+  {
+    value: "Point of view",
+    label: "Point of view",
+  },
+  {
+    value: "Interior",
+    label: "Interior",
+  },
+  {
+    value: "Exterior",
+    label: "Exterior",
+  },
+  {
+    value: "Landscape",
+    label: "Landscape",
+  },
+  {
+    value: "API",
+    label: "API",
+    disabled: true,
+  },
 ];
 
 export const MainMarketplace: React.FC = () => {
   const [show, setShow] = useState(true);
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const [widthFiller, setWidthFiller] = useState<number>(0);
+  const [widthFilter, setWidthFiller] = useState<number>(0);
+  const [listFilter, setListFilter] = useState<string[]>([]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setShow(false);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const [animationProps, setAnimationProps] = useSpring(() => ({
+    from: { x: 0, y: 0, scale: 1, opacity: 0 },
+    config: { tension: 200, friction: 150 },
+  }));
+
+  const carRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<HTMLDivElement[]>([]);
+
+  const handleAddToCart = (itemIndex: number) => {
+    const itemRef = itemRefs.current[itemIndex].getBoundingClientRect();
+    const cartRect = carRef.current?.getBoundingClientRect();
+    if (cartRect && itemRef) {
+      setAnimationProps({
+        from: {
+          x: itemRef.left,
+          y: itemRef.top,
+          scale: 1,
+          opacity: 1,
+        },
+        to: {
+          x: cartRect.left,
+          y: cartRect.top,
+          scale: 0.2,
+          opacity: 0,
+        },
+      });
+    }
+  };
 
   useEffect(() => {
     const observer = new ResizeObserver((entries) => {
@@ -57,31 +106,62 @@ export const MainMarketplace: React.FC = () => {
     <div className="marketplace__container">
       <div
         className={`marketplace__container-content ${
-          show ? "xl:col-span-8 lg:col-span-7 col-span-12" : "col-span-12"
+          show ? "xl:col-span-8 col-span-7" : "col-span-12"
         }`}
       >
         <MarketPlaceHeader />
-        <MarketPlaceFiller
-          listFiller={listFiller}
-          widthFiller={widthFiller}
+        <MarketPlaceFilter
+          listFilter={ListFilter}
+          widthFilter={widthFilter}
           containerRef={containerRef}
+          value={listFilter}
+          onChange={(value) =>
+            setListFilter((prev) =>
+              prev.includes(value)
+                ? prev.filter((prevValue) => prevValue !== value)
+                : [...prev, value]
+            )
+          }
         />
         <div
           className={`marketplace__container-listCard ${
             show
-              ? "2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-4 sm:grid-cols-3 grid-cols-2"
+              ? "2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2"
               : "2xl:grid-cols-7 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2"
           }`}
         >
           {Array.from({ length: 50 }).map((_, index) => (
+            <div
+              className={`item-${index}`}
+              ref={(el) => (itemRefs.current[index] = el!)}
+            >
+              <ItemCard
+                image={index === 0 ? [icon_1, icon_2, icon_3] : [icon_4]}
+                key={index}
+                title="Third person"
+                sub="We offer customized UI based on your needs"
+                onChange={() => handleAddToCart(index)}
+              />
+            </div>
+          ))}
+          <animated.div
+            className="item-fly"
+            style={{
+              position: "absolute",
+              top: -120,
+              left: -120,
+              width: "15%",
+              height: 50,
+              background: "red",
+              ...animationProps,
+            }}
+          >
             <ItemCard
-              image={index === 0 ? [icon_1, icon_2, icon_3] : []}
-              icon={index !== 0 && true}
-              key={index}
+              image={[icon_4]}
               title="Third person"
               sub="We offer customized UI based on your needs"
             />
-          ))}
+          </animated.div>
         </div>
       </div>
       {show ? (
@@ -90,6 +170,7 @@ export const MainMarketplace: React.FC = () => {
         <div className="absolute top-3 right-3">
           <div
             className="ml-auto w-10 h-10 bg-red-200 rounded-2xl flex items-center justify-center hover:bg-red-100 cursor-pointer"
+            ref={carRef}
             style={{ transition: "0.3s ease-in-out" }}
             onClick={() => setShow(true)}
           >

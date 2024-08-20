@@ -1,0 +1,15 @@
+.marketplace__filter-item {
+  @apply bg-[#EAEAEA] border border-[#B9B9B9] lg:text-[14px] text-[12px] font-[500] whitespace-nowrap rounded-lg;
+
+  &.selected {
+    @apply bg-white border-[#945C3C] text-[#945C3C] shadow-sm shadow-[#945C3C];
+  }
+
+  &.disabled {
+    @apply text-[#c2a9a9] cursor-not-allowed;
+  }
+
+  &:not(.disabled):not(.selected) {
+    @apply hover:border-[#6a3a3a];
+  }
+}
