@@ -19,6 +19,7 @@ const getBackground = (index: number) => {
 const ContentVision = () => {
   return (
     <div className="vision">
+      <ItemDate />
       <div className="h-fit flex flex-row md:max-lg:justify-start justify-center items-center z-10 w-full md:max-lg:flex-wrap md:max-xl:-space-x-[57px] -space-x-[72px] md:max-lg:ml-0 ml-[30px]">
         <ItemOne />
         {Numbers.map((number, index) => (
@@ -50,7 +51,6 @@ const ContentVision = () => {
           <ItemFive />
         </div>
       </div>
-      <ItemDate />
     </div>
   );
 };

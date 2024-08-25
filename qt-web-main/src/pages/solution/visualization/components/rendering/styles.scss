@@ -7,6 +7,31 @@
     }
 
     &-card {
-        @apply w-full h-full object-cover;
+        @apply w-full h-full object-cover cursor-pointer;
+    }
+    &-gallery-show {
+        @apply fixed w-full h-full z-[9999] top-0 left-0 flex items-center justify-center md:py-[4.4rem] py-0 overflow-hidden opacity-0 invisible;
+        transition: all 0.5s ease-in;
+        &-screen {
+            @apply absolute top-0 left-0 w-full h-full bg-[#00000090];
+        }
+        &.-active {
+            opacity: 1;
+            visibility: visible;
+        }
+        &-image {
+            @apply w-full h-full flex justify-center select-none;
+        }
+        &-btn {
+            @apply absolute mx-4 top-1/2 -translate-y-1/2 p-[.7rem] bg-[#000000d8] flex items-center justify-center cursor-pointer hover:text-white text-[#c4c4c4] z-50;
+        }
+
+        &-feature {
+            @apply absolute top-0 right-0 flex z-[9999];
+
+            &-btn {
+                @apply p-[1rem] bg-[#000000d8] flex items-center justify-center cursor-pointer hover:text-white text-[#c4c4c4];
+            }
+        }
     }
 }

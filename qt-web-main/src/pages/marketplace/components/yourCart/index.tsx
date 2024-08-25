@@ -4,13 +4,15 @@ import { Dispatch, SetStateAction } from "react";
 import ItemCart from "../itemCart";
 import icon_4 from "@assets/icon-4.png";
 import MarketplaceTotal from "../total";
+import { IItemCard } from "@interfaces/market-filter";
 
 interface IMarketPlaceCart {
   show: boolean;
   setShow: Dispatch<SetStateAction<boolean>>;
+  listCards: IItemCard[];
 }
 
-const MarketPlaceCart = ({ show, setShow }: IMarketPlaceCart) => {
+const MarketPlaceCart = ({ show, setShow, listCards }: IMarketPlaceCart) => {
   return (
     <div
       className={`marketplace__cart ${
@@ -37,7 +39,7 @@ const MarketPlaceCart = ({ show, setShow }: IMarketPlaceCart) => {
         </div>
 
         <div className="marketplace__cart-product">
-          {Array.from({ length: 3 }).map((_, index) => (
+          {listCards.map((_, index) => (
             <ItemCart
               image={icon_4}
               key={index}

@@ -1,8 +1,8 @@
 .aboutUs__ourTeam {
-  @apply w-full h-full flex flex-col items-center justify-between mb-[20px];
+  @apply w-full h-full flex flex-col items-center justify-between;
 
   @media (max-height: 1536px) {
-    height: calc(100dvh - 303px);
+    height: calc(100dvh - 270px);
   }
 
   &-content {

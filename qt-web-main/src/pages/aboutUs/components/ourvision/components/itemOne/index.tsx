@@ -6,7 +6,6 @@ const ItemOne: React.FC = () => {
   return (
     <div className="container_item1">
       <div className="container_text_item1">
-        <p className="text1_item1">STEP</p>
         <p className="text2_item1">01</p>
       </div>
       <div className="content_item1 z-10">

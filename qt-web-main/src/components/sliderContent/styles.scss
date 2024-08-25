@@ -28,6 +28,9 @@
       height: 100%;
     }
   }
+  &__loading {
+    @apply flex justify-center items-center h-full w-full
+  }
 }
 
 .slick-slider {
@@ -42,4 +45,12 @@
 .slick-initialized {
   height: 100%;
   width: 100%;
+}
+/* colorWhite of dots */
+.slick-dots li button:before {
+  color: white !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white !important;
 }

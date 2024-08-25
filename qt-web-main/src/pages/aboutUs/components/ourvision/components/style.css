@@ -11,7 +11,7 @@
   @apply md:max-xl:w-[220px] w-[261px] md:h-48 xl:h-[234px] grid grid-cols-3/1 z-30;
 }
 .items_item1 {
-  @apply w-full h-full bg-[#FFFFFF] rounded-xl border-2 flex flex-col justify-center md:max-xxxl:p-2 2xl:p-3 z-10;
+  @apply w-full h-full bg-[#FFFFFF] rounded-xl border-2 flex flex-col justify-center md:max-xl:p-2 p-3 z-10;
 }
 .h3_item1 {
   @apply font-bold text-[16px] text-[#64402B] flex justify-start;

@@ -1,53 +1,53 @@
 .cardOver {
     @apply w-full 2xl:h-[86%] h-full max-h-[500px] relative  px-[12px] pt-[17px] pb-[48px] cursor-pointer;
 
-  &__bg {
-    @apply absolute top-0 left-0 bottom-0 right-0 w-full h-full z-0;
-  }
-
-  &__content {
-    @apply w-full h-[96%] flex flex-col items-center justify-between gap-[16px];
-  }
-
-  &__title {
-    @apply w-fit flex justify-center px-[29px] py-[6px] rounded-full bg-[#FFFFFF60] text-[16px] font-bold text-[#464646] z-10;
-
-    font-family: "Inter";
-    border: 1px solid #f2f2f2;
-  }
-
-  &__box {
-    @apply w-full min-h-[170px] h-full bg-[#F2F2F2] rounded-lg z-10;
-
-    border: 1px solid #f2f2f2;
-  }
-
-  &__listIcon {
-    @apply w-full flex gap-[16px] justify-center z-10;
-  }
-
-  &__sub {
-    @apply w-full max-w-[196px] text-center text-[#292929] text-[12px] z-10;
-
-    font-family: "Inter";
-  }
-
-  &__btn {
-    @apply absolute right-0 bottom-[3px] w-[60%] py-[4px] flex gap-2 items-center justify-center rounded-full bg-[#FFFFFF60] text-[#464646] text-[16px] font-bold;
-  }
-
-  &:hover {
-    .cardOver__title {
-      @apply text-[#945C3C] border-[#945C3C];
+    &__bg {
+        @apply absolute top-0 left-0 bottom-0 right-0 w-full h-full z-0;
     }
 
     &__content {
         @apply w-full h-[96%] flex flex-col items-center justify-between gap-[16px];
     }
 
-    .cardOver__btn {
-      @apply text-white bg-[#945C3C] rounded-full;
-      box-shadow: 3px 3px 0 #945c3c;
+    &__title {
+        @apply w-fit flex justify-center px-[29px] py-[6px] rounded-full bg-[#FFFFFF60] text-[16px] font-bold text-[#464646] z-10;
+
+        font-family: 'Inter';
+        border: 1px solid #f2f2f2;
     }
-}
+
+    &__box {
+        @apply w-full min-h-[100px] h-full bg-[#F2F2F2] rounded-lg z-10;
+
+        border: 1px solid #f2f2f2;
+    }
+
+    &__listIcon {
+        @apply w-full flex gap-[16px] justify-center z-10;
+    }
+
+    &__sub {
+        @apply w-full max-w-[196px] text-center text-[#292929] text-[12px] z-10;
+
+        font-family: 'Inter';
+    }
+
+    &__btn {
+        @apply absolute right-0 bottom-[3px] w-[60%] py-[4px] flex gap-2 items-center justify-center rounded-full bg-[#FFFFFF60] text-[#464646] text-[16px] font-bold;
+    }
+
+    &:hover {
+        .cardOver__title {
+            @apply text-[#945C3C] border-[#945C3C];
+        }
+
+        &__content {
+            @apply w-full h-[96%] flex flex-col items-center justify-between gap-[16px];
+        }
+
+        .cardOver__btn {
+            @apply text-white bg-[#945C3C] rounded-full;
+            box-shadow: 3px 3px 0 #945c3c;
+        }
+    }
 }

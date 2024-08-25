@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './style.scss';
 import { ChangeEvent, useEffect, useRef, useState } from 'react';
+import { IoMdClose } from 'react-icons/io';
+
 export default function Search() {
     const links = [
         { name: 'Home', path: '/' },
@@ -21,6 +23,7 @@ export default function Search() {
     const [showInput, setShowInput] = useState(false);
     const searchRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
+    const clearRef = useRef<HTMLDivElement>(null);
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const newValue = e.target.value;
         setSearchKey(newValue);
@@ -31,10 +34,16 @@ export default function Search() {
         if (
             searchRef.current &&
             inputRef.current &&
+            clearRef.current &&
             !searchRef.current.contains(event.target) &&
-            !inputRef.current.contains(event.target)
+            !inputRef.current.contains(event.target) &&
+            !clearRef.current.contains(event.target)
         ) {
             setShowSearch(false);
+            setShowInput(false);
+            if (inputRef.current) {
+                inputRef.current.style.visibility = 'hidden';
+            }
         }
     };
 
@@ -55,14 +64,22 @@ export default function Search() {
                 }`}
                 value={searchKey}
                 onChange={(e) => handleChange(e)}
-                onBlur={() => {
-                    setShowInput(false);
-                    if (inputRef.current) {
-                        inputRef.current.style.visibility = 'hidden';
-                    }
-                }}
+                onFocus={() => setShowSearch(true)}
                 ref={inputRef}
             />
+            <div
+                ref={clearRef}
+                className={`icon-clear ${
+                    showInput ? `visible opacity-100 ` : `invisible opacity-0`
+                }`}
+                onClick={() => {
+                    setSearchKey('');
+                    setSearchValue('');
+                }}
+            >
+                <IoMdClose color="#ECECEC" size={20} />
+            </div>
+
             <svg
                 className={`icon-search ${
                     showInput ? `right-[90%] md:max-lg:right-[83%]` : `right-1`

@@ -14,7 +14,7 @@
   @apply w-full grid  gap-y-10 xxxl:max-xxl:translate-y-4
    grid-cols-6  xl:gap-x-3 md:max-xl:gap-x-2;
 }
-/*  */
+/* asss */
 .item-gridcontent1 {
   @apply col-span-1 rounded-lg  bg-[#CDCDCE] flex flex-col justify-center items-center w-full border border-transparent hover:border-[#945c3c] hover:text-[#945c3c] hover:shadow-hover transition-all;
 }
@@ -68,11 +68,4 @@
   @apply w-full h-[90vh] md:max-lg:h-[55vh] md:max-lg:object-fill object-cover;
 }
 
-/* colorWhite of dots */
-.slick-dots li button:before {
-  color: white !important;
-}
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: white !important;
-}
+

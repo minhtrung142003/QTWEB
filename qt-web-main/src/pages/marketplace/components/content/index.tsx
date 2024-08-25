@@ -10,6 +10,7 @@ import MarketPlaceFilter from "../fillter";
 import MarketPlaceCart from "../yourCart";
 import { animated, useSpring } from "@react-spring/web";
 import ItemCard from "../itemCard";
+import { IItemCard, IMarketPlaceFilterOption } from "@interfaces/market-filter";
 
 // const listFiller: string[] = [
 //   "Platform",
@@ -62,8 +63,14 @@ export const MainMarketplace: React.FC = () => {
 
   const carRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<HTMLDivElement[]>([]);
+  const [listItemCard, setListItemCard] = useState<IItemCard[]>([
+    {
+      title: "",
+      sub: "",
+    },
+  ]);
 
-  const handleAddToCart = (itemIndex: number) => {
+  const handleAddToCart = (itemIndex: number, item: IItemCard) => {
     const itemRef = itemRefs.current[itemIndex].getBoundingClientRect();
     const cartRect = carRef.current?.getBoundingClientRect();
     if (cartRect && itemRef) {
@@ -82,6 +89,7 @@ export const MainMarketplace: React.FC = () => {
         },
       });
     }
+    setListItemCard((prevList) => [...prevList, item]);
   };
 
   useEffect(() => {
@@ -140,7 +148,13 @@ export const MainMarketplace: React.FC = () => {
                 key={index}
                 title="Third person"
                 sub="We offer customized UI based on your needs"
-                onChange={() => handleAddToCart(index)}
+                onClick={() =>
+                  handleAddToCart(index, {
+                    title: "Third person",
+                    sub: "We offer customized UI based on your needs",
+                    image: index === 0 ? [icon_1, icon_2, icon_3] : [icon_4],
+                  })
+                }
               />
             </div>
           ))}
@@ -165,7 +179,11 @@ export const MainMarketplace: React.FC = () => {
         </div>
       </div>
       {show ? (
-        <MarketPlaceCart setShow={setShow} show={show} />
+        <MarketPlaceCart
+          setShow={setShow}
+          show={show}
+          listCards={listItemCard}
+        />
       ) : (
         <div className="absolute top-3 right-3">
           <div

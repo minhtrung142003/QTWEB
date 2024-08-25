@@ -13,7 +13,7 @@ const InputText = ({ isObligatory, title, category = "text" }: IInputText) => {
         {title}
         {isObligatory ? <span className="text-[#F04438]">*</span> : null}
       </div>
-      <input type={category} className="inputText__input" />
+      <input type={category} className="inputText__input"/>
     </div>
   );
 };

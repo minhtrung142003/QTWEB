@@ -16,19 +16,26 @@ export default function ShowcaseLeftMenu() {
                 <button
                     key={index}
                     onClick={() => setActiveIcon(index)}
-                    className={`px-1 py-4 ${
+                    className={` py-3 ${
                         index !== icon.length - 1 ? `border-b border-white` : ``
                     }`}
                 >
-                    <Icon
-                        key={index}
-                        size={20}
-                        className={`text-white ${
+                    <div
+                        className={`px-1 py-1 rounded-full ${
                             index === activeIcon
-                                ? `bg-[#22d3ee] bg-opacity-30 shadow-active-icon`
+                                ? `bg-white bg-opacity-20 `
                                 : ``
                         }`}
-                    />
+                    >
+                        <Icon
+                            key={index}
+                            size={20}
+                            color={`${index === activeIcon ? `#22d3ee ` : ``}`}
+                            className={`text-white ${
+                                index === activeIcon ? ` ` : ``
+                            }`}
+                        />
+                    </div>
                 </button>
             ))}
         </div>

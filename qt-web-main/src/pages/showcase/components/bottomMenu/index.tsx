@@ -3,7 +3,7 @@ import { MdMailOutline } from 'react-icons/md';
 export default function ShowcaseBottomMenu() {
     return (
         <>
-            <div className="absolute w-full bottom-0 bg-opacity-70 bg-black rounded-b-2xl">
+            <div className="absolute w-full bottom-0 bg-opacity-70 bg-black rounded-b-2xl transition-all duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                 <div className="w-full flex items-center justify-between md:max-xl: px-3 py-2 bottom-menu">
                     <div className="px-2">
                         <IoMdHome color="white" size={18} />

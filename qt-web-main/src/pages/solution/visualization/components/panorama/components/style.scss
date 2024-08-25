@@ -1,0 +1,45 @@
+.imgPanorama {
+  @apply w-full h-auto grid grid-cols-3;
+  &__content {
+    @apply w-full h-[50vh] col-span-1 relative;
+  }
+  &__img {
+    @apply w-full h-full object-cover;
+  }
+  &__icon {
+    @apply w-[60%] absolute inset-0 m-auto object-contain;
+  }
+}
+// modal
+.modal {
+  @apply fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50;
+
+  &__content {
+    @apply relative h-full w-full p-20 flex items-center;
+
+    .modal__close {
+      @apply absolute top-4 right-4 text-white text-4xl cursor-pointer;
+    }
+
+    .modal__fullscreen {
+      @apply absolute top-[1.4rem] right-12 text-white text-4xl cursor-pointer;
+    }
+    .modal__prev {
+      @apply absolute left-24 bg-black text-white text-3xl text-center cursor-pointer;
+    }
+    .modal__next {
+      @apply absolute right-24  bg-black text-white text-3xl text-center cursor-pointer;
+    }
+  }
+}
+.filter-white {
+  filter: brightness(0) invert(1); /* Đổi img zoom thành màu trắng */
+}
+.embed-container {
+  @apply relative w-full h-full;
+
+  iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+    border: 0;
+  }
+}

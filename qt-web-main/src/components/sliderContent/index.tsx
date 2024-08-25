@@ -2,12 +2,18 @@ import "./styles.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useEffect, useState } from "react";
+import { RotatingLines } from "react-loader-spinner";
 interface ISliderContent {
   listImages: string[];
 }
 
 const SliderContent = ({ listImages }: ISliderContent) => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(()=> {
+    const timer = setTimeout(()=> setIsLoading(false), 500);
+    return ()=> clearTimeout(timer);
+  }, [])
   const PrevArrow = (props: any) => {
     const { className, style, onClick } = props;
     return (
@@ -61,11 +67,25 @@ const SliderContent = ({ listImages }: ISliderContent) => {
 
   return (
     <div className="slider">
-      <Slider {...settings}>
+      {isLoading ? (
+         <div className="slider__loading">
+         <RotatingLines
+           visible={true}
+           width="40"
+           strokeWidth="5"
+           animationDuration="0.75"
+           strokeColor="#8B4513"
+           ariaLabel="rotating-lines-loading"
+         />
+       </div>
+      ) : (
+        <Slider {...settings}>
         {listImages.map((img, index) => (
           <img key={index} src={img} className="slider__card" alt="" />
         ))}
       </Slider>
+      )}
+    
     </div>
   );
 };

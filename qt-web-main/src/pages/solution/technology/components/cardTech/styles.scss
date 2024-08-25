@@ -1,8 +1,8 @@
 .cardTech {
-  @apply w-full xl:h-full h-[250px] flex items-center justify-center relative cursor-pointer;
+  @apply w-full xl:h-auto h-[250px] flex items-center justify-center relative cursor-pointer;
 
   &__icon {
-    @apply max-h-[55%] max-w-[70%] z-10 -translate-y-3;
+    @apply max-h-[55%] max-w-[70%] object-contain z-10 -translate-y-3;
   }
 
   &__bg {

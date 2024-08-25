@@ -1,11 +1,11 @@
-import "./styles.scss";
+import './styles.scss';
 
 const Consultation = () => {
-  return (
-    <div className="flex items-center justify-between">
-      <h1>This is Consultation</h1>
-    </div>
-  );
+    return (
+        <div className="h-full w-full flex items-center justify-center">
+            <h1>Coming soon...</h1>
+        </div>
+    );
 };
 
 export default Consultation;

@@ -12,7 +12,6 @@ export function ItemTwo_Four({
   return (
     <div className="-space-y-12 flex flex-col ">
       <div className="-space-y-6 relative z-20 text-center pr-16 md:max-xl:translate-y-5">
-        <p className="text1_item1">STEP</p>
         <p className="text2_item1">{stepNumber}</p>
       </div>
 

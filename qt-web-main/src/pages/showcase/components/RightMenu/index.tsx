@@ -1,4 +1,4 @@
-import House7 from '@assets/solution/visualization/house7.png';
+import House7 from '@assets/rendering_2.png';
 export default function ShowcaseRightMenu() {
     return (
         <>

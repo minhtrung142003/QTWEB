@@ -17,3 +17,7 @@
 .search_result {
     @apply max-h-60 w-full overflow-auto gap-y-4 flex-col;
 }
+.icon-clear {
+    @apply absolute w-[20px] h-[20px] right-2 transition-all duration-300 cursor-pointer;
+    top: calc(50% - 10px);
+}
