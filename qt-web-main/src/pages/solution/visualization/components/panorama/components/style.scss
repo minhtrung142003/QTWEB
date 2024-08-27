@@ -1,5 +1,5 @@
 .imgPanorama {
-  @apply w-full h-auto grid grid-cols-3;
+  @apply w-full h-auto grid grid-cols-3 gap-5;
   &__content {
     @apply w-full h-[50vh] col-span-1 relative;
   }
@@ -22,13 +22,13 @@
     }
 
     .modal__fullscreen {
-      @apply absolute top-[1.4rem] right-12 text-white text-4xl cursor-pointer;
+      @apply absolute top-4 right-12 text-white text-4xl cursor-pointer;
     }
     .modal__prev {
-      @apply absolute left-24 bg-black text-white text-3xl text-center cursor-pointer;
+      @apply absolute left-24 bg-black text-white text-3xl text-center cursor-pointer z-20;
     }
     .modal__next {
-      @apply absolute right-24  bg-black text-white text-3xl text-center cursor-pointer;
+      @apply absolute right-24  bg-black text-white text-3xl text-center cursor-pointer z-20;
     }
   }
 }

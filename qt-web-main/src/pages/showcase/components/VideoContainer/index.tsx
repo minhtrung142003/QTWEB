@@ -1,7 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import ShowcaseLeftMenu from '../leftMenu';
-import ShowcaseRightMenu from '../RightMenu';
-import ShowcaseBottomMenu from '../bottomMenu';
 import HomeVideo from '@assets/home/home.mp4';
 import Showcase1 from '@assets/showcase/showcase-1.mp4';
 import Showcase2 from '@assets/showcase/showcase-2.mp4';
@@ -12,10 +9,19 @@ interface VideoProps {
 }
 const VideoContainer: React.FC<VideoProps> = ({ videoIndex }) => {
     const videoHome = useRef<HTMLVideoElement>(null);
-
-    const demo = [HomeVideo, Showcase1, Showcase2];
+    const demo = [
+        HomeVideo,
+        Showcase1,
+        Showcase2,
+        HomeVideo,
+        Showcase1,
+        Showcase2,
+        HomeVideo,
+    ];
     const [video, setVideo] = useState(HomeVideo);
     const [key, setKey] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
+
     const handleLoadedData = () => {
         setIsLoading(true);
     };
@@ -33,12 +39,11 @@ const VideoContainer: React.FC<VideoProps> = ({ videoIndex }) => {
             videoHome.current.playbackRate = 0.75;
         }
     });
-    const [isLoading, setIsLoading] = useState(true);
 
     return (
         <div className="w-full h-full relative">
             <div
-                className={`absolute w-full h-full group rounded-2xl bg-center transition-all duration-500 ${
+                className={`absolute w-full h-full rounded-2xl bg-center transition-all duration-500 ${
                     !isLoading ? `opacity-100 visible` : `opacity-0 invisible`
                 }`}
             >
@@ -60,9 +65,6 @@ const VideoContainer: React.FC<VideoProps> = ({ videoIndex }) => {
                 >
                     <source src={video} type="video/mp4"></source>
                 </video>
-                <ShowcaseLeftMenu />
-                <ShowcaseRightMenu />
-                <ShowcaseBottomMenu />
             </div>
             <div
                 className={`absolute w-full gap-3 h-full bg-[#D9D9D9] rounded-2xl flex justify-center items-center  transition-all duration-500 ${

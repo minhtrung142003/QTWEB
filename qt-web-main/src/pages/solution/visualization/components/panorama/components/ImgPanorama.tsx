@@ -1,20 +1,37 @@
 import icon360 from "@assets/solution/visualization/panorama/icon360.png";
 import "./style.scss";
-import { useState } from "react";
-import iconzoom from "@assets/solution/visualization/panorama/iconzoom.png";
+import { useEffect, useState } from "react";
 import { DataIframe } from "../../../../../../data/dataIframe";
-
+import { RotatingLines } from "react-loader-spinner";
+import {
+  MdClose,
+  MdFullscreen,
+  MdKeyboardArrowRight,
+  MdKeyboardArrowLeft,
+} from "react-icons/md";
 interface IImgPanorama {
   listImages: string[];
 }
 
 const ImgPanorama = ({ listImages }: IImgPanorama) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    setIsLoading(true);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
+
   const handleOpen = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(true);
   };
+
   const handleClose = () => {
     setIsOpen(false);
   };
@@ -31,16 +48,19 @@ const ImgPanorama = ({ listImages }: IImgPanorama) => {
       }
     }
   };
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === DataIframe.length - 1 ? 0 : prevIndex + 1
     );
   };
+
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? DataIframe.length - 1 : prevIndex - 1
     );
   };
+
   return (
     <div className="imgPanorama">
       {listImages.map((img, index) => (
@@ -57,23 +77,36 @@ const ImgPanorama = ({ listImages }: IImgPanorama) => {
         <div className="modal">
           <div className="modal__content">
             <div className="embed-container">
+              {isLoading && (
+                <div className="absolute flex inset-0 justify-center items-center bg-black z-10">
+                  <RotatingLines
+                    visible={true}
+                    width="40"
+                    strokeWidth="5"
+                    animationDuration="0.75"
+                    strokeColor="#8B4513"
+                    ariaLabel="rotating-lines-loading"
+                  />
+                </div>
+              )}
               <iframe
                 src={DataIframe[currentIndex]}
-                style={{ border: "0" }}
+                style={{ border: "0", display: isLoading ? "none" : "block" }}
                 allow="autoplay; fullscreen"
+                onLoad={() => setIsLoading(false)}
               ></iframe>
             </div>
             <button className="modal__close" onClick={handleClose}>
-              &times;
+              <MdClose size={24} />
             </button>
             <button className="modal__fullscreen" onClick={toggleFullScreen}>
-              <img src={iconzoom} alt="" className="max-w-8 filter-white" />
+              <MdFullscreen size={24} />
             </button>
             <button className="modal__prev" onClick={handlePrev}>
-              &larr;{" "}
+              <MdKeyboardArrowLeft size={30} />
             </button>
             <button className="modal__next" onClick={handleNext}>
-              &rarr;{" "}
+              <MdKeyboardArrowRight size={30} />
             </button>
           </div>
         </div>

@@ -4,18 +4,28 @@ import { CiRuler } from 'react-icons/ci';
 import { CiCamera } from 'react-icons/ci';
 import { useState } from 'react';
 
-export default function ShowcaseLeftMenu() {
+interface LeftMenuProps {
+    setVideo: (value: number) => void;
+}
+const ShowcaseLeftMenu: React.FC<LeftMenuProps> = ({ setVideo }) => {
     const [activeIcon, setActiveIcon] = useState(0);
+    const handleClick = (index: number) => {
+        if (index !== activeIcon) {
+            setActiveIcon(index);
+            setVideo(index);
+        }
+    };
+
     const icon = [GiParkBench, SiOpenlayers, CiRuler, CiCamera];
     return (
         <div
-            className="absolute flex flex-col left-0 bg-opacity-70 p-2 bg-black rounded-r-2xl"
+            className="absolute left-20 flex flex-col bg-opacity-70 p-2 bg-black rounded-r-2xl"
             style={{ top: 'calc(50% - 132px)' }}
         >
             {icon.map((Icon, index) => (
                 <button
                     key={index}
-                    onClick={() => setActiveIcon(index)}
+                    onClick={() => handleClick(index)}
                     className={` py-3 ${
                         index !== icon.length - 1 ? `border-b border-white` : ``
                     }`}
@@ -40,4 +50,5 @@ export default function ShowcaseLeftMenu() {
             ))}
         </div>
     );
-}
+};
+export default ShowcaseLeftMenu;

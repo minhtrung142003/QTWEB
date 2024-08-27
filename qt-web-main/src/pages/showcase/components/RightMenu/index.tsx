@@ -3,7 +3,7 @@ export default function ShowcaseRightMenu() {
     return (
         <>
             <div
-                className="absolute mr-3 w-[11rem] h-[75%] flex flex-col right-0 bg-opacity-50 p-2 bg-black rounded-2xl"
+                className="absolute mr-3 w-[11rem] h-[75%] flex flex-col right-20 bg-opacity-50 p-2 bg-black rounded-2xl"
                 style={{ top: 'calc(12.5% - 18px)' }}
             >
                 <div className="flex gap-[5px] justify-center ">
