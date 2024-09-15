@@ -1,9 +1,23 @@
 import House7 from '@assets/rendering_2.png';
-export default function ShowcaseRightMenu() {
+import { useEffect, useState } from 'react';
+
+interface RightMenuProps {
+    index: number;
+}
+const ShowcaseRightMenu: React.FC<RightMenuProps> = ({ index }) => {
+    const [showMenu, setShowMenu] = useState(false);
+    useEffect(() => {
+        if (index === 6) setShowMenu(true);
+        else setShowMenu(false);
+    }, [index]);
     return (
         <>
             <div
-                className="absolute mr-3 w-[11rem] h-[75%] flex flex-col right-20 bg-opacity-50 p-2 bg-black rounded-2xl"
+                className={`absolute mr-3 w-[11rem] h-[75%] flex flex-col transition-all duration-300 right-20 bg-opacity-50 p-2 bg-black rounded-2xl ${
+                    showMenu
+                        ? 'opacity-100 translate-x-0'
+                        : 'opacity-0 translate-x-10'
+                }`}
                 style={{ top: 'calc(12.5% - 18px)' }}
             >
                 <div className="flex gap-[5px] justify-center ">
@@ -30,4 +44,5 @@ export default function ShowcaseRightMenu() {
             </div>
         </>
     );
-}
+};
+export default ShowcaseRightMenu;

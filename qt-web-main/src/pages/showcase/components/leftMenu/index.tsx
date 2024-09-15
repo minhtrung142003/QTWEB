@@ -2,17 +2,21 @@ import { GiParkBench } from 'react-icons/gi';
 import { SiOpenlayers } from 'react-icons/si';
 import { CiRuler } from 'react-icons/ci';
 import { CiCamera } from 'react-icons/ci';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface LeftMenuProps {
     setVideo: (value: number) => void;
+    index: number;
 }
-const ShowcaseLeftMenu: React.FC<LeftMenuProps> = ({ setVideo }) => {
-    const [activeIcon, setActiveIcon] = useState(0);
+const ShowcaseLeftMenu: React.FC<LeftMenuProps> = ({ setVideo, index }) => {
+    const [activeIcon, setActiveIcon] = useState<number | null>(null);
+    useEffect(() => {
+        if (index > 6 || index < 3) setActiveIcon(null);
+    }, [index]);
     const handleClick = (index: number) => {
         if (index !== activeIcon) {
             setActiveIcon(index);
-            setVideo(index);
+            setVideo(index + 3);
         }
     };
 

@@ -3,7 +3,7 @@ import './styles.scss';
 
 const ItemCard = ({ image, title, sub, onClick }: IItemCard) => {
     return (
-        <div className="marketplace__card " onClick={onClick}>
+        <div className="marketplace__card" onClick={onClick}>
             <div className="marketplace__card-listImage">
                 {image?.map((item, index) => (
                     <img
@@ -14,7 +14,6 @@ const ItemCard = ({ image, title, sub, onClick }: IItemCard) => {
                     />
                 ))}
             </div>
-
             <div className="marketplace__card-title">
                 <h3 className="font-bold text-sm group-hover:text-white ">
                     {title}

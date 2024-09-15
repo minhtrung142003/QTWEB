@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import './styles.scss';
 import ContainerMenu from '@components/containerMenu';
+
+import { useNavigate } from 'react-router-dom';
 import OurVision from './components/ourVision';
 import OurTeam from './components/ourTeam';
 import OurContact from './components/ourContact';
-import { useNavigate } from 'react-router-dom';
 const listImages: string[] = ['OurVision', 'OurTeam', 'OurContact'];
 
 const listPages: JSX.Element[] = [<OurVision />, <OurTeam />, <OurContact />];

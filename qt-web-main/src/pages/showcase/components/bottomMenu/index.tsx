@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoMdHome } from 'react-icons/io';
 import { MdMailOutline } from 'react-icons/md';
 
 interface BottomMenuProps {
     setVideo: (value: number) => void;
+    index: number;
 }
-const ShowcaseBottomMenu: React.FC<BottomMenuProps> = ({ setVideo }) => {
-    const [activeIndex, setActiveIndex] = useState(0);
+const ShowcaseBottomMenu: React.FC<BottomMenuProps> = ({ setVideo, index }) => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    useEffect(() => {
+        if (index < 7) setActiveIndex(null);
+    }, [index]);
     const handleClick = (index: number) => {
         if (index !== activeIndex) {
             setActiveIndex(index);
-            setVideo(index);
+            setVideo(index + 7);
         }
     };
     return (
@@ -33,7 +37,9 @@ const ShowcaseBottomMenu: React.FC<BottomMenuProps> = ({ setVideo }) => {
                         <button
                             onClick={() => handleClick(index)}
                             key={index}
-                            className={`text-white w-full md:max-[883px]:text-[9px] uppercase text-xs border-r border-[#7f7f76]  ${
+                            className={`text-white w-full md:max-[883px]:text-[9px] uppercase select-none text-xs border-r border-[#7f7f76] ${
+                                index === activeIndex ? 'text-[#22d3ee]' : ''
+                            }  ${
                                 index == 0 ? 'border-l border-[#7f7f76]' : ''
                             } `}
                         >

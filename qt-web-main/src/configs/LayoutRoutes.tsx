@@ -1,5 +1,6 @@
 import AboutUs from '@pages/aboutUs';
 import Home from '@pages/home';
+import LoginRegister from '@pages/login';
 import MarketPlace from '@pages/marketplace';
 import ShowCase from '@pages/showcase';
 import OurStrength from '@pages/solution/ourstrength';
@@ -11,6 +12,10 @@ const LayoutRoutes: RouteProps[] = [
     {
         path: '',
         element: <Home />,
+    },
+    {
+        path: 'login',
+        element: <LoginRegister />,
     },
     {
         path: 'solution_technology',

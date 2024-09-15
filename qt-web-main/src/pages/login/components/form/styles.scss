@@ -1,0 +1,27 @@
+.form {
+    @apply w-full h-full p-[3rem]  bg-[#ffffff98];
+
+    &_body {
+        @apply max-w-[40rem] w-full h-full flex flex-col justify-center xl:gap-[20px] gap-[10px] overflow-auto pr-[8px];
+    }
+
+    &_row {
+        @apply w-full h-fit flex justify-between;
+
+        &-text {
+            @apply relative cursor-pointer;
+
+            &::after {
+                @apply absolute w-0 h-[1px] bg-primary left-0 bottom-0 z-10;
+                content: '';
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                &::after {
+                    @apply w-full;
+                }
+            }
+        }
+    }
+}

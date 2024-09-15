@@ -15,9 +15,9 @@ export default function MainShowcase() {
         <ItemContainer extraCss="md:max-lg:mt-8 rounded-tr-[0px] py-5 px-20 relative border-t-0 border-r-0">
             <TopRightMenu setVideo={setVideo} />
             <VideoContainer videoIndex={videoIndex} />
-            <ShowcaseLeftMenu setVideo={setVideo} />
-            <ShowcaseRightMenu />
-            <ShowcaseBottomMenu setVideo={setVideo} />
+            <ShowcaseLeftMenu setVideo={setVideo} index={videoIndex} />
+            <ShowcaseRightMenu index={videoIndex} />
+            <ShowcaseBottomMenu setVideo={setVideo} index={videoIndex} />
         </ItemContainer>
     );
 }

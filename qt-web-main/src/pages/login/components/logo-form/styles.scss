@@ -1,0 +1,15 @@
+.logoForm {
+    @apply w-full h-full relative;
+    background-image: url(../../../../assets/images/240506_TH3_CHOKAN.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::after {
+        content: '';
+        @apply absolute top-0 left-0 w-full h-full z-10 bg-[black] opacity-40;
+    }
+
+    &_logo {
+        @apply h-full w-full flex items-center justify-center z-40;
+    }
+}

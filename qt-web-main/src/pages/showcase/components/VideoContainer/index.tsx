@@ -17,6 +17,11 @@ const VideoContainer: React.FC<VideoProps> = ({ videoIndex }) => {
         Showcase1,
         Showcase2,
         HomeVideo,
+        Showcase2,
+        HomeVideo,
+        Showcase1,
+        Showcase2,
+        HomeVideo,
     ];
     const [video, setVideo] = useState(HomeVideo);
     const [key, setKey] = useState(0);

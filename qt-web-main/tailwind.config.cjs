@@ -20,6 +20,11 @@ module.exports = {
                 'button-bg': 'rgba(255, 255, 255, 0.6)',
                 colorOrgane: '#945c3c',
                 colorWhite: '#DBDBDB',
+                primary: '#FF9900',
+                white: '#ffffff',
+                black: '#000000',
+                yellow: '#F5712A',
+                lightGray: '#D3D3D3',
             },
             dropShadow: {
                 'card-layout': '4px 4px rgba(249,115,22,0.4)',
